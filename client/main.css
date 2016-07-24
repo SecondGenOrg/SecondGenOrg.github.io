@@ -6,6 +6,8 @@
 html, body, .content-wrapper {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 h1, h2, h3, h4, h5, h6 {
 	padding: 0;
@@ -17,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-	padding-left: 15%;
+	margin: auto;
 	width: 70%;
 }
 
@@ -29,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Homepage styles */
 #home-wrapper #section-splash {
 	background-image: url(https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688);
-	height: 100vh;
+	min-height: 75vh;
 	background-size: cover;
 }
 
@@ -41,9 +43,11 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 2vh;
 }
 
-#what-we-do-header {
+.section-header {
+	text-align: center;
+	width: 100%;
 	font-weight: 200;
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	margin-top: 5vh;
 }
 #section-what-we-do .row {
@@ -63,4 +67,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 .what-we-do-panel img {
 	width: 100%;
+}
+
+#subscribe-banner {
+	width: 100vw;
+	padding-top: 7vh;
+	padding-bottom: 7vh;
+	background: #2196f3;
+}
+
+#section-partners .row {
+	padding: 10vh;
+	padding-top: 2vh;
+}
+#section-partners .img-wrapper {
+	padding: 15px;
+}
+#section-partners img {
+	width: 100%;
+	height: auto;
 }
