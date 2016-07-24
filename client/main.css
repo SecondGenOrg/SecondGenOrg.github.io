@@ -1,0 +1,66 @@
+/* Universal styles */
+* {
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+html, body, .content-wrapper {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+.white-text {
+	color: white;
+}
+
+.container {
+	padding-left: 15%;
+	width: 70%;
+}
+
+.center-align {
+	text-align: center;
+	width: 100%;
+}
+
+/* Homepage styles */
+#home-wrapper #section-splash {
+	background-image: url(https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688);
+	height: 100vh;
+	background-size: cover;
+}
+
+#home-wrapper #subscribe-panel {
+	margin-top: 20vh;
+	background: white;
+	border-radius: 2vh;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 2vh;
+}
+
+#what-we-do-header {
+	font-weight: 200;
+	font-size: 2.5em;
+	margin-top: 5vh;
+}
+#section-what-we-do .row {
+	padding: 10vh;
+	padding-top: 2vh;
+}
+.what-we-do-panel {
+	padding: 15px;
+	text-align: center;
+}
+.what-we-do-panel h3 {
+	margin-top: 2vh;
+}
+.what-we-do-panel p {
+	margin: 0;
+	font-weight: 300;
+}
+.what-we-do-panel img {
+	width: 100%;
+}

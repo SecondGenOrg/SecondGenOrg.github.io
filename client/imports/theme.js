@@ -6,9 +6,9 @@ import zIndex from 'material-ui/styles/zIndex';
 
 // I grabbed these from a different project. Colors need to be changed
 export default {
-    spacing: Spacing,
+    spacing: Spacing/*,
     palette: {
-        primary1Color: '#ffad0a', // Gold
+        primary1Color: '#2196F3', // Gold
         primary2Color: '#00af5b', // Green
         primary3Color: '#ee532c', // Red
         accent1Color: '#00af5b', // Green
@@ -21,5 +21,5 @@ export default {
         disabledColor: ColorManipulator.fade('#f5f0e5', 0.3),
         pickerHeaderColor: 'white',
         zIndex,
-    }
+    }*/
 };
