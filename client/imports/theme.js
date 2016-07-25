@@ -16,7 +16,7 @@ export default {
         accent3Color: Colors.pinkA100,
         textColor: '#000000',
         alternateTextColor: '#201e1c',
-        canvasColor: '#201e1c',
+        canvasColor: '#ffffff',
         borderColor: ColorManipulator.fade('#f5f0e5', 0.3),
         disabledColor: ColorManipulator.fade('#f5f0e5', 0.3),
         pickerHeaderColor: 'white',

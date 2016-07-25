@@ -6,12 +6,36 @@
 html, body, .content-wrapper {
 	margin: 0;
 	padding: 0;
+	min-height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	margin: 0;
+}
+
+.header-wrapper {
+	background-size: cover;
+	background-attachment: fixed;
+	height: 60vh;
+}
+.header-text {
+	min-width: 50%;
+	margin: auto;
+	color: white;
+}
+.header-wrapper h1 {
+	font-size: 3.5em;
+	width: 100%;
+	line-height: 1;
+}
+.header-wrapper p {
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	font-size: 2em;
+	line-height: 1;
+	margin-top: 2vh;
 }
 
 .white-text {
@@ -22,10 +46,27 @@ h1, h2, h3, h4, h5, h6 {
 	margin: auto;
 	width: 70%;
 }
+.grid-container {
+	margin: auto;
+	width: 95%;
+}
 
 .center-align {
 	text-align: center;
 	width: 100%;
+}
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.valign-wrapper .valign {
+  display: block;
 }
 
 /* Homepage styles */
@@ -86,4 +127,14 @@ h1, h2, h3, h4, h5, h6 {
 #section-partners img {
 	width: 100%;
 	height: auto;
+}
+
+/* Events page styles */
+#events-wrapper .event-card-wrapper {
+	padding: 1.2vh;
+}
+#events-wrapper .grid-container {
+	margin-top: -15vh;
+	padding-bottom: 3vh;
+	min-height: 75vh;
 }
