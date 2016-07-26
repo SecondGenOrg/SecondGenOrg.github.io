@@ -70,14 +70,14 @@ export default class Home extends React.Component {
                     <h1 id="partners-header" className="section-header">Partners</h1>
                     <div className="row">
                         <div className="col-md-4 col-xs-12 img-wrapper">
-                            <img src="https://lh6.googleusercontent.com/wA4GFlCner9YTlZIKBigAAYBDHUodJa93F3nzPuo1FJCjt1s7Oo1-gMyj_qefpUjsPGwfw"/>
+                            <img src="img/logos/partners/googleforentrepreneurs.png"/>
                         </div>
                         <div className="col-md-4 col-xs-12 img-wrapper">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Hewlett_Packard_Enterprise_logo.svg/1000px-Hewlett_Packard_Enterprise_logo.svg.png"/>
+                            <img src="img/logos/partners/hpe.png"/>
                         </div>
                         <div className="col-md-4 col-xs-12 img-wrapper">
                             { /* find image with blue text */ }
-                            <img src="https://cdn.makeschool.com/assets/main/logo-40c556abff7b50c3d7d09d6a7323ec05.svg"/>
+                            <img src="img/logos/partners/makeschool.png"/>
                         </div>
                     </div>
                 </section>
