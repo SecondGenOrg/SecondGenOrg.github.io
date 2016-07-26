@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Card, CardActions, CardHeader, CardText, CardMedia, CardTitle } from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
+import Paper from 'material-ui/Paper'
 import FlatButton from 'material-ui/FlatButton';
 import Colors from 'material-ui/styles/colors'
 
@@ -36,7 +37,7 @@ export default class Events extends React.Component {
                 </section>
                 <div className="grid-container">
                     <div className="row">
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 event-card-wrapper">
+                        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 event-card-wrapper">
                             <Card
                             zDepth={3}>
                                 <CardMedia
@@ -61,6 +62,7 @@ export default class Events extends React.Component {
                             </Card>
                         </div>
                     </div>
+                    <Paper id="cover" zDepth={5}/>
                 </div>
             </div>
         );

@@ -16,12 +16,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-wrapper {
+	position: fixed;
 	background-size: cover;
-	background-attachment: fixed;
 	height: 60vh;
+	left: 0;
+	right: 0;
 }
 .header-text {
 	min-width: 50%;
+	max-width: 80%;
 	margin: auto;
 	color: white;
 }
@@ -131,10 +134,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Events page styles */
 #events-wrapper .event-card-wrapper {
-	padding: 1.2vh;
+	padding: 1.5vh;
+	z-index: 201;
 }
 #events-wrapper .grid-container {
-	margin-top: -15vh;
+	margin-top: 45vh;
 	padding-bottom: 3vh;
-	min-height: 75vh;
+	position: relative;
+	z-index: 200;
+}
+
+#events-wrapper .grid-container #cover {
+	position: absolute;
+	bottom: 0;
+	top: 15vh;
+	left: -5vh;
+	right: -5vh;
+	background: white;
 }
