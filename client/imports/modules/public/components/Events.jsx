@@ -16,14 +16,20 @@ export default class Events extends React.Component {
         const events = [{
             name: 'IncubateX',
             date: 'August 6-7',
-            imgSrc: 'http://incubatex.org/img/5.jpg',
+            imgSrc: 'http://incubatex.org/sf/img/5.jpg',
             url: 'https://incubatex.org'
         }];
-        this.state = { styles, events };
+        const pastEvents = [{
+            name: 'Old Event',
+            date: 'June 9',
+            imgSrc: 'http://lorempixel.com/400/200/',
+            url: '#'
+        }];
+        this.state = { styles, events, pastEvents };
     }
 
     render() {
-        const { styles, events } = this.state;
+        const { styles, events, pastEvents } = this.state;
         var eventGridContent = events.map(function(event) {
             return(
                 <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 event-card-wrapper">
@@ -35,7 +41,20 @@ export default class Events extends React.Component {
                     />
                 </div>
             );
-        })
+        });
+        var pastEventGridContent = pastEvents.map(function(event) {
+            return(
+                <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 event-card-wrapper">
+                    <EventCard
+                        name={event.name}
+                        date={event.date}
+                        imgSrc={event.imgSrc}
+                        url={event.url}
+                        pastEvent={true}
+                    />
+                </div>
+            );
+        });
         return (
             <div id="events-wrapper" className="content-wrapper">
                 <section className="header-wrapper valign-wrapper" style={ styles.sectionHeader }> 
@@ -47,6 +66,11 @@ export default class Events extends React.Component {
                 <div className="grid-container">
                     <div className="row">
                         {eventGridContent}
+                    </div>
+                    <div className="horizontal-divider"></div>
+                    <h2>Past Events</h2>
+                    <div className="row">
+                        {pastEventGridContent}
                     </div>
                     <Paper id="cover" zDepth={5}/>
                 </div>

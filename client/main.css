@@ -72,6 +72,15 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.horizontal-divider {
+	width: 100%;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	height: 2px;
+	background-color: #e0e0e0;
+	z-index: 1000;
+}
+
 /* Homepage styles */
 #home-wrapper #section-splash {
 	background-image: url(https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688);
@@ -137,6 +146,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 1.5vh;
 	z-index: 201;
 }
+#events-wrapper h2 {
+	z-index: 1000;
+	font-size: 2em;
+	font-weight: 700;
+	padding-left: 1vh;
+}
 #events-wrapper .grid-container {
 	margin-top: 45vh;
 	padding-bottom: 3vh;
@@ -153,4 +168,10 @@ h1, h2, h3, h4, h5, h6 {
 	right: -5vh;
 	bottom: 0;
 	background: white;
+	z-index: -1;
+}
+
+img.bw {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
