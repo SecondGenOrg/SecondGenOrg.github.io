@@ -32,12 +32,12 @@ export default class Events extends React.Component {
                 <section className="header-wrapper valign-wrapper" style={ styles.sectionHeader }> 
                     <div className="header-text valign">
                         <h1>Events</h1>
-                        <p>Attend an event by SecondGen or one of its sponsors.</p>
+                        <p>Attend community events hosted by SecondGen and its partners.</p>
                     </div>
                 </section>
                 <div className="grid-container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 event-card-wrapper">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 event-card-wrapper">
                             <Card
                             zDepth={3}>
                                 <CardMedia

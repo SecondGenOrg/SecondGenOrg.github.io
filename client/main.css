@@ -140,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 #events-wrapper .grid-container {
 	margin-top: 45vh;
 	padding-bottom: 3vh;
+	min-height: 55vh;
 	position: relative;
 	z-index: 200;
 }
@@ -150,5 +151,6 @@ h1, h2, h3, h4, h5, h6 {
 	top: 15vh;
 	left: -5vh;
 	right: -5vh;
+	bottom: 0;
 	background: white;
 }
