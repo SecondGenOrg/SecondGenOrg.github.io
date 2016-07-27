@@ -3,7 +3,7 @@
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
-html, body, .content-wrapper {
+html, body, .page-wrapper {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: auto;
 	width: 70%;
 }
-.grid-container {
+.content-wrapper {
 	margin: auto;
 	width: 95%;
 }
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	padding-left: 1vh;
 }
-#events-wrapper .grid-container {
+#events-wrapper .content-wrapper {
 	margin-top: 45vh;
 	padding-bottom: 3vh;
 	min-height: 55vh;
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 200;
 }
 
-#events-wrapper .grid-container #cover {
+#events-wrapper .content-wrapper #cover {
 	position: absolute;
 	bottom: 0;
 	top: 15vh;

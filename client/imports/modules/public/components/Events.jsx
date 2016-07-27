@@ -60,14 +60,14 @@ export default class Events extends React.Component {
             );
         });
         return (
-            <div id="events-wrapper" className="content-wrapper">
+            <div id="events-wrapper" className="page-wrapper">
                 <section className="header-wrapper valign-wrapper" style={ styles.sectionHeader }> 
                     <div className="header-text valign">
                         <h1>Events</h1>
                         <p>Attend community events hosted by SecondGen and its partners.</p>
                     </div>
                 </section>
-                <div className="grid-container">
+                <div className="content-wrapper">
                     <div className="row">
                         {eventGridContent}
                     </div>

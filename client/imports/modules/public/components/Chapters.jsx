@@ -3,7 +3,7 @@ import ChaptersMap from './ChaptersMap'
 export default class Chapters extends React.Component {
     render() {
         return (
-            <div id="chapters-wrapper" className="content-wrapper">
+            <div id="chapters-wrapper" className="page-wrapper">
             		<section className="header-wrapper valign-wrapper"> 
                     <div className="header-text valign">
                         <h1>Chapters</h1>

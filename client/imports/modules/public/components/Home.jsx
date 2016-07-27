@@ -17,7 +17,7 @@ export default class Home extends React.Component {
     render() {
         const { styles } = this.state;
         return (
-            <div id="home-wrapper" className="content-wrapper">
+            <div id="home-wrapper" className="page-wrapper">
                 <section id="section-splash">
                 </section>
                 <section id="section-what-we-do">
