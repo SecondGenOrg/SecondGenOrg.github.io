@@ -21,7 +21,12 @@ export default class EventCard extends React.Component {
     }
     
     render() {
-        const { styles } = this.state;
+        const { styles} = this.state;
+        const tagChips = this.props.tags.map(function(tag) {
+           return(
+               <Chip style={styles.chip} className="event-tag">{tag}</Chip>
+           );
+        });
         return(
             <Card zDepth={3}>
                 <CardMedia overlay={
@@ -30,8 +35,7 @@ export default class EventCard extends React.Component {
                     <img className={this.props.pastEvent ? 'bw' : ''} src={this.props.imgSrc} />
                 </CardMedia>
                 <CardText>
-                    <Chip style={styles.chip} className="event-tag">Programming</Chip>
-                    <Chip style={styles.chip} className="event-tag">Business</Chip>
+                    {tagChips}
                 </CardText>
                 <CardActions>
                     <a href={this.props.url}>

@@ -17,13 +17,15 @@ export default class Events extends React.Component {
             name: 'IncubateX',
             date: 'August 6-7',
             imgSrc: 'http://incubatex.org/sf/img/5.jpg',
-            url: 'https://incubatex.org'
+            url: 'https://incubatex.org',
+            tags: ['Programming', 'Business']
         }];
         const pastEvents = [{
             name: 'Old Event',
             date: 'June 9',
             imgSrc: 'http://lorempixel.com/400/200/',
-            url: '#'
+            url: '#',
+            tags: ['Music', 'Film']
         }];
         this.state = { styles, events, pastEvents };
     }
@@ -38,6 +40,7 @@ export default class Events extends React.Component {
                         date={event.date}
                         imgSrc={event.imgSrc}
                         url={event.url}
+                        tags={event.tags}
                     />
                 </div>
             );
@@ -50,6 +53,7 @@ export default class Events extends React.Component {
                         date={event.date}
                         imgSrc={event.imgSrc}
                         url={event.url}
+                        tags={event.tags}
                         pastEvent={true}
                     />
                 </div>
