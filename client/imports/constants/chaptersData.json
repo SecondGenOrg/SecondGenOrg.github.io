@@ -1,0 +1,15 @@
+[{
+  "position": {
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  "defaultAnimation": 2,
+  "key": "San Francisco"
+}, {
+  "position": {
+    "lat": 32.8998,
+    "lng": -97.0403
+  },
+  "defaultAnimation": 2,
+  "key": "Dallas Fort Worth"
+}]

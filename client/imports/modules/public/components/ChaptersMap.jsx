@@ -9,37 +9,14 @@ import Colors from 'material-ui/styles/colors'
 import { GoogleMapLoader, GoogleMap, Marker } from "react-google-maps";
 import { triggerEvent } from "react-google-maps/lib/utils";
 import mapStyles from '../../../constants/chaptersMapStyles.json'
+import chaptersData from '../../../constants/chaptersData.json'
 
 export default class ChaptersMap extends Component {
   constructor(props, context) {
     super(props, context);
     this.handleWindowResize = _.throttle(this.handleWindowResize.bind(this), 500);
     this.state = {
-	    markers: [{
-	      position: {
-	        lat: 25.0112183,
-	        lng: 121.52067570000001,
-	      },
-	      key: 'Taiwan',
-	      defaultAnimation: 2,
-        chapter: 'Taiwan'
-	    }, {
-        position: {
-          lat: 37.7749,
-          lng: -122.4194
-        },
-        key: 'San Francisco',
-        defaultAnimation: 2,
-        chapter: 'San Francisco'
-      }, {
-        position: {
-          lat: 32.8998,
-          lng: -97.0403
-        },
-        key: 'Dallas Fort Worth',
-        defaultAnimation: 2,
-        chapter: 'Dallas Fort Worth'
-      }]
+	    markers: chaptersData
 	  }
   }
 
@@ -69,7 +46,7 @@ export default class ChaptersMap extends Component {
 
   handleMarkerClick(index, event) {
     let { markers } = this.state;
-    alert(markers[index].chapter);
+    alert(markers[index].key);
   }
 
   render() {
@@ -90,7 +67,9 @@ export default class ChaptersMap extends Component {
               styles: mapStyles,
               mapTypeControl: false,
               streetViewControl: false,
-              zoomControl: false
+              zoomControl: false,
+              maxZoom: 3,
+              minZoom: 3
             }}
           >
             {this.state.markers.map((marker, index) => {
