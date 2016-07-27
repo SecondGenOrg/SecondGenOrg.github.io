@@ -1,5 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import Nav from './Nav.jsx';
 import store from '../store';
 import Theme from '../theme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -21,7 +22,9 @@ export default class Layout extends React.Component {
     render() {
         return (
             <Provider store={store}>
-                {this.props.children}
+                <Nav>
+                    {this.props.children}
+                </Nav>
             </Provider>
         );
     }
