@@ -51,8 +51,17 @@ h1, h2, h3, h4, h5, h6 {
 	width: 70%;
 }
 .content-wrapper {
-	margin: auto;
 	width: 95%;
+	margin: auto;
+	margin-top: 45vh;
+	padding-bottom: 3vh;
+	min-height: 55vh;
+	position: relative;
+	z-index: 200;
+	pointer-events: none;
+}
+.content-wrapper * {
+    pointer-events: all;
 }
 
 .center-align {
@@ -80,6 +89,20 @@ h1, h2, h3, h4, h5, h6 {
 	height: 2px;
 	background-color: #e0e0e0;
 	z-index: 1000;
+}
+.content-wrapper #cover {
+	position: absolute;
+	top: 15vh;
+	left: -5vh;
+	right: -5vh;
+	bottom: 0;
+	background: white;
+	z-index: -1;
+}
+
+img.bw {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 /* Homepage styles */
@@ -152,29 +175,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2em;
 	font-weight: 700;
 	padding-left: 1vh;
-}
-#events-wrapper .content-wrapper {
-	margin-top: 45vh;
-	padding-bottom: 3vh;
-	min-height: 55vh;
-	position: relative;
-	z-index: 200;
-}
-
-#events-wrapper .content-wrapper #cover {
-	position: absolute;
-	bottom: 0;
-	top: 15vh;
-	left: -5vh;
-	right: -5vh;
-	bottom: 0;
-	background: white;
-	z-index: -1;
-}
-
-img.bw {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
 }
 
 /* Chapters page styles */
