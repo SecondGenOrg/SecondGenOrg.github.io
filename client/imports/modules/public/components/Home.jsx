@@ -20,29 +20,37 @@ export default class Home extends React.Component {
             <div id="home-wrapper" className="page-wrapper">
                 <section id="section-splash">
                 </section>
-                <section id="section-what-we-do">
+                <section id="section-what-we-do" className="content-section">
                 <h1 id="what-we-do-header" className="section-header">What We Do</h1>
                     <div className="row">
-                        <div className="col-md-3 what-we-do-panel">
-                            <img src="https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688"/>
+                        <a className="col-md-3 what-we-do-panel">
+                            <div className="img-wrapper">
+                                <img src="/img/assets/club.png"/>
+                            </div>
                             <h3>Chapters</h3>
                             <p>Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.</p>
-                        </div>
-                        <div className="col-md-3 what-we-do-panel">
-                            <img src="https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688"/>
+                        </a>
+                        <a className="col-md-3 what-we-do-panel">
+                            <div className="img-wrapper">
+                                <img src="/img/assets/eaglehacks.png"/>
+                            </div>
                             <h3>Events</h3>
                             <p>Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.</p>
-                        </div>
-                        <div className="col-md-3 what-we-do-panel">
-                            <img src="https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688"/>
+                        </a>
+                        <a className="col-md-3 what-we-do-panel">
+                            <div className="img-wrapper">
+                                <img src="/img/assets/canhacks.jpg"/>
+                            </div>
                             <h3>Mentors</h3>
                             <p>Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.</p>
-                        </div>
-                        <div className="col-md-3 what-we-do-panel">
-                            <img src="https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688"/>
+                        </a>
+                        <a className="col-md-3 what-we-do-panel">
+                            <div className="img-wrapper">
+                                <img src="/img/assets/ted.png"/>
+                            </div>
                             <h3>Resources</h3>
                             <p>Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.</p>
-                        </div>
+                        </a>
                     </div>
                 </section>
                 <div id="subscribe-banner">
@@ -66,7 +74,7 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <section id="section-partners">
+                <section id="section-partners" className="content-section">
                     <h1 id="partners-header" className="section-header">Partners</h1>
                     <div className="row">
                         <div className="col-md-4 col-xs-12 img-wrapper">
