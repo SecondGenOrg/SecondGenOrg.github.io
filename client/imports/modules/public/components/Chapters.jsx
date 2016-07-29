@@ -14,18 +14,9 @@ export default class Chapters extends React.Component {
                 <div className="col-lg-3 col-md-4 col-sm-4 col-xs-6 chapter-card-wrapper">
                     <Card zDepth={3}
                         style={{
-                            height: '37vh',
+                            height: '15vh',
                             position: 'relative'
                         }}>
-                        <CardMedia>
-                            <div 
-                                style={{
-                                    backgroundImage: "url("+chapter.imgUrl+")"
-                                }}
-                                className="img-wrapper"
-                            >
-                            </div>
-                        </CardMedia>    
                         <CardTitle 
                             title={chapter.key} 
                             subtitle={chapter.regional ? "Regional Chapter" : chapter.city} 
