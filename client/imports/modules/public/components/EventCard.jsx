@@ -32,7 +32,7 @@ export default class EventCard extends React.Component {
                 <CardMedia overlay={
                         <CardTitle title={this.props.name} subtitle={this.props.date} />
                     }>
-                    <img className={this.props.pastEvent ? 'bw' : ''} src={this.props.imgSrc} />
+                    <img className={this.props.pastEvent ? 'card-img bw' : 'card-img'} src={this.props.imgSrc} />
                 </CardMedia>
                 <CardText>
                     {tagChips}

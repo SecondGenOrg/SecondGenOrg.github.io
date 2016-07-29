@@ -103,7 +103,6 @@ h1, h2, h3, h4, h5, h6 {
 	background: white;
 	z-index: -1;
 }
-
 img.bw {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -191,6 +190,12 @@ img.bw {
 	padding: 1.5vh;
 	z-index: 201;
 }
+#events-wrapper .event-card-wrapper img {
+	height: 25vh;
+	width: auto;
+	object-fit: cover;
+	object-position: center;
+}
 #events-wrapper h2 {
 	z-index: 1000;
 	font-size: 2em;
@@ -209,3 +214,13 @@ img.bw {
 #chapters-wrapper .header-text {
 	pointer-events: none;
 }
+#chapters-wrapper .chapter-card-wrapper {
+	padding: 1.5vh;
+	z-index: 201;
+}
+#chapters-wrapper .chapter-card-wrapper .img-wrapper {
+	height: 10vw;
+	width: 100%;
+	background-size: cover;
+}
+
