@@ -11,10 +11,10 @@ export default class Chapters extends React.Component {
     render() {
         var chaptersCards = chaptersData.map(function(chapter) {
             return (
-                <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 chapter-card-wrapper">
+                <div className="col-lg-3 col-md-4 col-sm-4 col-xs-6 chapter-card-wrapper">
                     <Card zDepth={3}
                         style={{
-                            height: '20vw',
+                            height: '37vh',
                             position: 'relative'
                         }}>
                         <CardMedia>
@@ -30,7 +30,7 @@ export default class Chapters extends React.Component {
                             title={chapter.key} 
                             subtitle={chapter.regional ? "Regional Chapter" : chapter.city} 
                             titleStyle={{
-                                fontSize: '1.2em',
+                                fontSize: '3vh',
                                 lineHeight: 1.1
                             }}
                             style={{

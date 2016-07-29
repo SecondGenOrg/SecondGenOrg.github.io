@@ -219,7 +219,7 @@ img.bw {
 	z-index: 201;
 }
 #chapters-wrapper .chapter-card-wrapper .img-wrapper {
-	height: 10vw;
+	height: 20vh;
 	width: 100%;
 	background-size: cover;
 }

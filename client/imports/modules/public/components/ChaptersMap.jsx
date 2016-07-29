@@ -69,7 +69,8 @@ export default class ChaptersMap extends Component {
               streetViewControl: false,
               zoomControl: false,
               maxZoom: 3,
-              minZoom: 3
+              minZoom: 3,
+              scrollwheel: false
             }}
           >
             {this.state.markers.map((marker, index) => {
