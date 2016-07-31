@@ -8,18 +8,72 @@ export default class Nav extends React.Component {
                     id="navbar"
                     tabs={[
                         {
-                            title: 'About',
+                            title: 'About', 
+                        		items: [
+                        				{
+                        						text: 'Values',
+                        						href: '#'
+                        				}, {
+                        						text: 'Team',
+                        						href: '#'
+                        				}, {
+                        						text: 'FAQ',
+                        						href: '#'
+                        				}, {
+                        						text: 'Contact Us',
+                        						href: '#'
+                        				}
+                        		]
                         }, {
-                            title: 'Programs',
+                            title: 'Programs', 
+                        		items: [
+                        				{
+                        						text: 'Chapters',
+                        						href: '/chapters'
+                        				}, {
+                        						text: 'Events',
+                        						href: '/events'
+                        				}, {
+                        						text: 'Camps',
+                        						href: '#'
+                        				}
+                        		]
                         }, {
-                            title: 'Resources',
+                            title: 'Resources', 
+                        		items: [
+                        				{
+                        						text: 'Mentors',
+                        						href: '#'
+                        				}, {
+                        						text: 'Videos',
+                        						href: '#'
+                        				}, {
+                        						text: 'Curriculum',
+                        						href: '#'
+                        				}, {
+                        						text: 'Student Pack',
+                        						href: '#'
+                        				}
+                        		]
                         }, {
-                            title: 'Get Involved'
+                            title: 'Get Involved',
+                        		items: [
+                        				{
+                        						text: 'Start a Chapter',
+                        						href: '#'
+                        				}, {
+                        						text: 'Become a Mentor',
+                        						href: '#'
+                        				}, {
+                        						text: 'Join Our Team',
+                        						href: '#'
+                        				}, {
+                        						text: 'Partner',
+                        						href: '#'
+                        				}
+                        		]
                         }
                     ]}
-                    style={{
-                        zIndex: 999999
-                    }}
                 />
                 {this.props.children}
             </div>
