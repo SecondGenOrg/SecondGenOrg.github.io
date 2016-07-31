@@ -57,9 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 .content-wrapper {
 	width: 95%;
 	margin: auto;
-	margin-top: 45vh;
 	padding-bottom: 3vh;
-	min-height: 55vh;
 	position: relative;
 	z-index: 200;
 	pointer-events: none;
@@ -107,7 +105,13 @@ img.bw {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
-
+/* Navbar styles */
+#navbar-primary li {
+	transition: background 0.3s ease;
+}
+#navbar-primary li:hover, #navbar-primary li.active {
+	background: #eeeeee;
+}
 /* Homepage styles */
 #home-wrapper #section-splash {
 	background-image: url(/img/assets/dallas.png);
@@ -196,6 +200,10 @@ img.bw {
 	object-fit: cover;
 	object-position: center;
 }
+#events-wrapper .content-wrapper {
+	margin-top: 45vh;
+	min-height: 55vh;
+}
 #events-wrapper h2 {
 	z-index: 1000;
 	font-size: 2em;
@@ -214,9 +222,25 @@ img.bw {
 #chapters-wrapper .header-text {
 	pointer-events: none;
 }
+#chapters-wrapper .content-wrapper {
+	margin-top: 50vh;
+	min-height: 50vh;
+}
+#chapters-wrapper #cover {
+	top: 10vh;
+}
 #chapters-wrapper .chapter-card-wrapper {
 	padding: 1.5vh;
 	z-index: 201;
+}
+#chapters-wrapper .chapter-card-wrapper > div {
+	height: 18vh;
+	position: relative;
+}
+@media (max-width: 600px) {
+	#chapters-wrapper .chapter-card-wrapper > div {
+		height: 22vh;
+	}
 }
 #chapters-wrapper .chapter-card-wrapper .img-wrapper {
 	height: 20vh;

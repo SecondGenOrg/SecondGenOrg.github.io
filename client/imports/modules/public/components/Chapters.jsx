@@ -12,11 +12,7 @@ export default class Chapters extends React.Component {
         var chaptersCards = chaptersData.map(function(chapter) {
             return (
                 <div className="col-lg-3 col-md-4 col-sm-4 col-xs-6 chapter-card-wrapper">
-                    <Card zDepth={3}
-                        style={{
-                            height: '15vh',
-                            position: 'relative'
-                        }}>
+                    <Card zDepth={3}>
                         <CardTitle 
                             title={chapter.key} 
                             subtitle={chapter.regional ? "Regional Chapter" : chapter.city} 
@@ -60,9 +56,9 @@ export default class Chapters extends React.Component {
                         <h1>Chapters</h1>
                         <p>Some text about chapters or something blah blah blah.</p>
                     </div>
-		            	<ChaptersMap
-		            		id="chapters-map"
-		            	/>
+	            	<ChaptersMap
+	            		id="chapters-map"
+	            	/>
                 </section>
                 <div className="content-wrapper">
                     <div className="row">
