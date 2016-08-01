@@ -85,7 +85,7 @@ export default class StartChapter extends React.Component {
                     </div>
                 </section>
                 <div className="content-wrapper">
-                    <Paper id="form-wrapper">
+                    <Paper zDepth={3} id="form-wrapper">
 	                    	<form onSubmit={this.handleFormSubmit.bind(this)}>
 	                    			<p>Get started by filling out this form.</p>
 	                    			<div className="row">
