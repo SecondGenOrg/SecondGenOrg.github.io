@@ -1,5 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Colors from 'material-ui/styles/colors';
+
 export default class Nav extends React.Component {
     render() {
         return (
@@ -9,6 +11,7 @@ export default class Nav extends React.Component {
                     tabs={[
                         {
                             title: 'About', 
+                        		color: Colors.pink900,
                         		items: [
                         				{
                         						text: 'Values',
@@ -26,6 +29,7 @@ export default class Nav extends React.Component {
                         		]
                         }, {
                             title: 'Programs', 
+                        		color: Colors.green900,
                         		items: [
                         				{
                         						text: 'Chapters',
@@ -40,6 +44,7 @@ export default class Nav extends React.Component {
                         		]
                         }, {
                             title: 'Resources', 
+                        		color: Colors.orange900,
                         		items: [
                         				{
                         						text: 'Mentors',
@@ -57,6 +62,7 @@ export default class Nav extends React.Component {
                         		]
                         }, {
                             title: 'Get Involved',
+                        		color: Colors.teal900,
                         		items: [
                         				{
                         						text: 'Start a Chapter',
@@ -75,6 +81,7 @@ export default class Nav extends React.Component {
                         }
                     ]}
                 />
+                <div class="spacer" style={{height: '5vh'}}/>
                 {this.props.children}
             </div>
         );

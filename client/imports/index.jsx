@@ -11,7 +11,16 @@ Meteor.startup(() => {
     injectTapEventPlugin();
     const root = loadModules(Public.Home, Public);
     console.log(root);
-    const router = <Router history={browserHistory} routes={root} />;
+    const router = (
+    	<Router
+    		onUpdate={
+    			() => {
+	    			window.scrollTo(0, 0)
+	    		}
+    		} 
+    		history={browserHistory} routes={root} 
+    	/>
+    );
     console.log(router);
     render(router, document.getElementById('app-root'));
 })

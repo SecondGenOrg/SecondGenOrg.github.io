@@ -1,23 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Paper from  'material-ui/Paper';
-
+import Colors from  'material-ui/styles/colors';
 class Navbar extends React.Component {
-    constructor() {
-        super();
-        const selectedTab = 'About';
-        this.state={}
+    constructor(props) {
+        super(props);
+        this.state = {
+	    			selectedTabIndex: 0
+	    	}
     }
-    onPrimaryTabClick(tab) {
+    getNavbarColor() {
+    	if(window.location.pathname == '/') {
+    		return Colors.blue800;
+    	}
+    	var result = null;
+    	this.props.tabs.forEach(function(tab) { // do this on route load
+    			tab.items.forEach(function(item) {
+    					if(item.href == window.location.pathname) {
+    							result = tab.color;
+    					}
+    			}, this);
+  		}, this);
+  		return result;
+    }
+    onPrimaryTabClick(tab, index) {
         console.log("tab clicked", tab);
         this.setState({
-            selectedTab: tab
+            selectedTabIndex: index
         })
     }
     render() {
-    		if(!this.state.selectedTab) {
-    			this.state.selectedTab = this.props.tabs[0];
-    		}
+    		// find which tab has href for current route
+    		var navbarColor = this.getNavbarColor();
         return(
             <Paper 
             		zDepth={2}
@@ -26,18 +40,17 @@ class Navbar extends React.Component {
                     left: 0,
                     right: 0,
                     top: 0,
-                    height: '12vh',
                     zIndex: 999999
                 }}
             >
                 <div 
                     id="navbar-primary"
                     style={{
-                        position: 'absolute',
-                        top: 0,
-                        right: 0,
-                        left: 0,
-                        height: '65%',
+                        position: 'relative',
+                        width: '100vw',
+                        margin: 0,
+                        padding: 0,
+                        minHeight: '8vh',
                         background: 'white'
                     }}
                 >
@@ -50,7 +63,6 @@ class Navbar extends React.Component {
 	                					top: 0, 
 	                					bottom: 0,
 	                					width: 'auto',
-	                					maxHeight: '100%',
 	                					padding: 0
                 				}}
                 		>
@@ -67,29 +79,32 @@ class Navbar extends React.Component {
                             top: 0,
                             right: 0,
                             bottom: 0,
-                            margin: 0
+                            margin: 0,
+                            padding: 0,
+                            height: '100%'
                         }}
                     >
                         {
-                            this.props.tabs.map(function(tab) {
+                            this.props.tabs.map(function(tab, index) {
                                 return (
                                     <li
-                                        className={ 
-                                            this.state.selectedTab.title == tab.title
-                                              ? 'valign-wrapper active' 
-                                              : 'valign-wrapper' 
-                                        }
-                                        onClick={this.onPrimaryTabClick.bind(this, tab)}
+                                        className="valign-wrapper"
+                                        onClick={this.onPrimaryTabClick.bind(this, tab, index)}
                                         key={tab.title}
                                         style={{
                                             display: 'inline-flex',
                                             height: '100%',
                                             margin: 0,
-                                            paddingLeft: '1.5vw',
-                                            paddingRight: '1.5vw',
+                                            paddingLeft: '1.3vw',
+                                            paddingRight: '1.3vw',
                                             cursor: 'pointer',
-                                            color: '#505050',
-                        										fontWeight: 700
+                        										fontWeight: 700,
+                        										background: this.props.tabs[this.state.selectedTabIndex].title == tab.title
+                                              ? navbarColor
+                                              : null,
+                                            color: this.props.tabs[this.state.selectedTabIndex].title == tab.title
+                                              ? '#eeeeee'
+                                              : '#505050'
                                         }}
                                     >
                                         <p
@@ -109,12 +124,11 @@ class Navbar extends React.Component {
                 <div 
                     id="navbar-secondary"
                     style={{
-                        position: 'absolute',
-                        bottom: 0,
-                        right: 0,
-                        left: 0,
-                        height: '35%',
-                        background: '#eeeeee'
+                    		position: 'relative',
+                        width: '100vw',
+                        margin: 0,
+                        padding: 0,
+                        background: navbarColor
                     }}>
                     <ul 
                         style={{
@@ -122,21 +136,24 @@ class Navbar extends React.Component {
                             position: 'relative',
                             width: 'auto',
                             margin: 'auto',
-                            height: '100%'
+                            marginTop: 0,
+                            marginBottom: 0,
+                            padding: 0,
+                            transition: 'max-height 1s'
                         }}
                     >
                         {
-                            this.state.selectedTab.items.map(function(item) {
+                            this.props.tabs[this.state.selectedTabIndex].items.map(function(item) {
                                 return (
                                     <li
                                         className='valign-wrapper'
                                         key={item.text}
                                         style={{
                                             display: 'inline-flex',
-                                            height: '100%',
                                             margin: 0,
-                                            paddingLeft: 20,
-                                            paddingRight: 20,
+                                            padding: '1vh',
+                                            paddingLeft: '2vw',
+                                            paddingRight: '2vw',
                                             fontWeight: 400,
                                             cursor: 'pointer',
                                             animation: '0.25s ease fadeIn'
@@ -151,7 +168,7 @@ class Navbar extends React.Component {
 		                                            className="valign"
 		                                            style={{
 		                                                margin: 0,
-		                                                color: '#303030'
+		                                                color: '#eeeeee'
 		                                            }}
 		                                        >
 		                                            {item.text}
