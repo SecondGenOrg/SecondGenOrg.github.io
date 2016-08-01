@@ -66,7 +66,7 @@ export default class Nav extends React.Component {
                         		items: [
                         				{
                         						text: 'Start a Chapter',
-                        						href: '#'
+                        						href: '/start-chapter'
                         				}, {
                         						text: 'Become a Mentor',
                         						href: '#'
@@ -81,7 +81,7 @@ export default class Nav extends React.Component {
                         }
                     ]}
                 />
-                <div class="spacer" style={{height: '5vh'}}/>
+                <div className="spacer" style={{height: '5vh'}}/>
                 {this.props.children}
             </div>
         );
