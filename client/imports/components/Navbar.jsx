@@ -98,8 +98,8 @@ class Navbar extends React.Component {
                                             paddingLeft: '1.3vw',
                                             paddingRight: '1.3vw',
                                             cursor: 'pointer',
-                        										fontWeight: 700,
-                        										background: this.props.tabs[this.state.selectedTabIndex].title == tab.title
+                        					fontWeight: 300,
+                        					background: this.props.tabs[this.state.selectedTabIndex].title == tab.title
                                               ? navbarColor
                                               : null,
                                             color: this.props.tabs[this.state.selectedTabIndex].title == tab.title
@@ -154,7 +154,7 @@ class Navbar extends React.Component {
                                             padding: '1vh',
                                             paddingLeft: '2vw',
                                             paddingRight: '2vw',
-                                            fontWeight: 400,
+                                            fontWeight: 300,
                                             cursor: 'pointer',
                                             animation: '0.25s ease fadeIn'
                                         }}
