@@ -55,15 +55,15 @@ export default class StartChapter extends React.Component {
 						'Content-Type': 'application/json'
 					},
 					data: { 
-						firstName,
-						lastName,
-						email,
-						institution,
-						gradYear,
-						linkedin,
-						resume,
-						facebook,
-						twitter,
+						'First Name': firstName,
+						'Last Name': lastName,
+						'Email Address': email,
+						'School/Organization': institution,
+						'Graduation Year': gradYear,
+						'LinkedIn': linkedin,
+						'Resume URL': resume,
+						'Facebook': facebook,
+						'Twitter': twitter,
 						_subject: 'Start a Chapter Application'
 				}
 			}).then(function (response) {
