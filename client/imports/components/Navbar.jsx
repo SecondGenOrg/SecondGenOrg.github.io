@@ -6,13 +6,10 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-	    			selectedTabIndex: 0
-	    	}
+    			selectedTabIndex: 0
+    	}
     }
     getNavbarColor() {
-    	if(window.location.pathname == '/') {
-    		return Colors.blue800;
-    	}
     	var result = null;
     	this.props.tabs.forEach(function(tab) { // do this on route load
     			tab.items.forEach(function(item) {
@@ -21,6 +18,7 @@ class Navbar extends React.Component {
     					}
     			}, this);
   		}, this);
+        result = result ? result : Colors.blue800
   		return result;
     }
     onPrimaryTabClick(tab, index) {
