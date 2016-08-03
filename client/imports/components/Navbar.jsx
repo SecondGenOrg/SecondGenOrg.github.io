@@ -149,7 +149,6 @@ class Navbar extends React.Component {
                                         style={{
                                             display: 'inline-flex',
                                             margin: 0,
-                                            padding: '1vh',
                                             paddingLeft: '2vw',
                                             paddingRight: '2vw',
                                             fontWeight: 300,
@@ -159,7 +158,11 @@ class Navbar extends React.Component {
                                     >
                                     		<Link to={item.href} 
                                     			style={{
-                                    				textDecoration: 'none'
+                                                    paddingTop: '1vh',
+                                                    paddingBottom: '1vh',
+                                    				textDecoration: 'none',
+                                                    display: 'block',
+                                                    height: '100%',
                                     			}}
                                     		>
 		                                        <p
