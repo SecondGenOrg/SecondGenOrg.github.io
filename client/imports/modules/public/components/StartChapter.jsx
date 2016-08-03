@@ -87,7 +87,7 @@ export default class StartChapter extends React.Component {
     render() {
     		const { styles } = this.state;
         return (
-            <div id="start-chapter-wrapper" className="page-wrapper">
+            <div className="page-wrapper get-involved-wrapper">
                 <section className="header-wrapper valign-wrapper" style={ styles.sectionHeader }> 
                     <div className="header-text valign">
                         <h1>Start a Chapter</h1>
