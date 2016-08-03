@@ -69,7 +69,7 @@ export default class Nav extends React.Component {
                         						href: '/start-chapter'
                         				}, {
                         						text: 'Become a Mentor',
-                        						href: '#'
+                        						href: '/become-mentor'
                         				}, {
                         						text: 'Join Our Team',
                         						href: '#'
