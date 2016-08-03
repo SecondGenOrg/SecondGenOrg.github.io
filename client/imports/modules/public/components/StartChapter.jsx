@@ -33,28 +33,26 @@ export default class StartChapter extends React.Component {
 		}
 		handleFormSubmit(evt) {
 				evt.preventDefault();
-				let firstName = this.refs.first_name_input.input.value;
-				let lastName = this.refs.last_name_input.input.value;
-				let email = this.refs.email_input.input.value;
-				let institution = this.refs.institution_input.input.value;
-				let gradYear = this.refs.grad_year_input.input.value;
-				let linkedin = this.refs.linkedin_input.input.value;
-				let resume = this.refs.resume_input.input.value;
-				let facebook = this.refs.facebook_input.input.value;
-				let twitter = this.refs.twitter_input.input.value;
+				let firstName = this.refs.first_name_input.getValue();
+				let lastName = this.refs.last_name_input.getValue();
+				let email = this.refs.email_input.getValue();
+				let institution = this.refs.institution_input.getValue();
+				let gradYear = this.refs.grad_year_input.getValue();
+				let linkedin = this.refs.linkedin_input.getValue();
+				let resume = this.refs.resume_input.getValue();
+				let facebook = this.refs.facebook_input.getValue();
+				let twitter = this.refs.twitter_input.getValue();
+				let startup = this.refs.startup_input.getValue();
+				let club = this.refs.club_input.getValue();
+				let how = this.refs.how_input.getValue();
+				console.log(startup, club, how);
 				if(firstName == '' || lastName == '' 
-						|| email == ''|| institution == '' || gradYear == '') {
+						|| email == ''|| institution == '' || gradYear == ''
+						|| startup == '' || club == '' || how == '') {
 						this.setState({ errorMessage: true });
 						return;
 				}
-				this.setState({ errorMessage: false });
-				axios({
-					url: 'https://formspree.io/secondgenco@gmail.com',
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json'
-					},
-					data: { 
+				let formData = { 
 						'First Name': firstName,
 						'Last Name': lastName,
 						'Email Address': email,
@@ -64,8 +62,20 @@ export default class StartChapter extends React.Component {
 						'Resume URL': resume,
 						'Facebook': facebook,
 						'Twitter': twitter,
-						_subject: 'Start a Chapter Application'
+						_subject: 'Start a Chapter Application',
+						'Please tell us about an interesting startup that you created or worked on.': startup,
+						'Do you plan to incorporate SecondGen into an existing club? If not, what steps have you taken to start your club?': club,
+						'How did you learn about SecondGen?': how
 				}
+				console.log(formData);
+				this.setState({ errorMessage: false });
+				axios({
+					url: 'https://formspree.io/secondgenco@gmail.com',
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					data: formData
 			}).then(function (response) {
 			    	alert('We have received your application!');
 			    	browserHistory.push('/');
@@ -212,6 +222,57 @@ export default class StartChapter extends React.Component {
 			                    							style={styles.textFieldStyle}
 			                    							floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
 			                    							underlineFocusStyle={styles.underlineFocusStyle}
+			                    					/>
+			                    			</div>
+	                    			</div>
+	                    			<div className="row">
+	                    					<div
+	                    							className="col-md-12"
+	                    							style={styles.inputWrapperStyle}
+	                    					>
+			                    					<TextField 
+			                    							ref="startup_input"
+			                    							name="startup"
+			                    							floatingLabelText="Please tell us about an interesting startup that you created or worked on."
+			                    							style={styles.textFieldStyle}
+			                    							floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+			                    							underlineFocusStyle={styles.underlineFocusStyle}
+			                    							multiLine={true}
+			                    							rows={5}
+			                    					/>
+			                    			</div>
+	                    			</div>
+														<div className="row">
+	                    					<div
+	                    							className="col-md-12"
+	                    							style={styles.inputWrapperStyle}
+	                    					>
+			                    					<TextField 
+			                    							ref="club_input"
+			                    							name="club"
+			                    							floatingLabelText="Do you plan to incorporate SecondGen into an existing club? If not, what steps have you taken to start your club?"
+			                    							style={styles.textFieldStyle}
+			                    							floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+			                    							underlineFocusStyle={styles.underlineFocusStyle}
+			                    							multiLine={true}
+			                    							rows={5}
+			                    					/>
+			                    			</div>
+	                    			</div>
+	                    			<div className="row">
+	                    					<div
+	                    							className="col-md-12"
+	                    							style={styles.inputWrapperStyle}
+	                    					>
+			                    					<TextField 
+			                    							ref="how_input"
+			                    							name="how"
+			                    							floatingLabelText="How did you learn about SecondGen?"
+			                    							style={styles.textFieldStyle}
+			                    							floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+			                    							underlineFocusStyle={styles.underlineFocusStyle}
+			                    							multiLine={true}
+			                    							rows={2}
 			                    					/>
 			                    			</div>
 	                    			</div>
