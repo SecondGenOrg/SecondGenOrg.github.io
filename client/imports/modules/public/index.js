@@ -4,12 +4,15 @@ import Chapters from './components/Chapters.jsx';
 import StartChapter from './components/StartChapter.jsx';
 import BecomeMentor from './components/BecomeMentor.jsx';
 import JoinTeam from './components/JoinTeam.jsx';
+import Partner from './components/Partner.jsx';
+
 export { Home as Home };
 export { Events as Events };
 export { Chapters as Chapters };
 export { StartChapter as StartChapter };
 export { BecomeMentor as BecomeMentor };
 export { JoinTeam as JoinTeam };
+export { Partner as Partner };
 
 export function initialize() {
 
@@ -34,5 +37,8 @@ export const routes = [
 	}, {
 		path: 'join-team',
 		component: JoinTeam
+	}, {
+		path: 'partner',
+		component: Partner
 	}
 ];

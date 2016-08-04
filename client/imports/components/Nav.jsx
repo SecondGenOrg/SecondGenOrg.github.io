@@ -75,7 +75,7 @@ export default class Nav extends React.Component {
                         						href: '/join-team'
                         				}, {
                         						text: 'Partner',
-                        						href: '#'
+                        						href: '/partner'
                         				}
                         		]
                         }
