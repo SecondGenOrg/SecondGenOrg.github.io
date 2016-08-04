@@ -77,15 +77,32 @@ export default class Home extends React.Component {
                 <section id="section-partners" className="content-section">
                     <h1 id="partners-header" className="section-header">Partners</h1>
                     <div className="row">
-                        <div className="col-md-4 col-xs-12 img-wrapper">
-                            <img src="img/logos/partners/googleforentrepreneurs.png"/>
+                        <div className="col-md-3 col-xs-12 img-wrapper valign-wrapper">
+                            <img 
+                                className="valign" 
+                                src="img/logos/partners/googleforentrepreneurs.png"
+                            />
                         </div>
-                        <div className="col-md-4 col-xs-12 img-wrapper">
-                            <img src="img/logos/partners/hpe.png"/>
+                        <div className="col-md-3 col-xs-12 img-wrapper valign-wrapper">
+                            <img 
+                                className="valign" 
+                                src="img/logos/partners/hpe.png"
+                            />
                         </div>
-                        <div className="col-md-4 col-xs-12 img-wrapper">
-                            { /* find image with blue text */ }
-                            <img src="img/logos/partners/makeschool.png"/>
+                        <div className="col-md-3 col-xs-12 img-wrapper valign-wrapper">
+                            <img 
+                                className="valign" 
+                                src="img/logos/partners/makeschool.png"
+                            />
+                        </div>
+                        <div className="col-md-3 col-xs-12 img-wrapper valign-wrapper">
+                            <img 
+                                className="valign" 
+                                src="img/logos/partners/rogerwilco.png"
+                                style={{
+                                    width: '75%'
+                                }}
+                            />
                         </div>
                     </div>
                 </section>
