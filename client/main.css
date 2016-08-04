@@ -123,8 +123,7 @@ img.bw {
 #home-wrapper #section-splash {
   background-image: url(/img/assets/dallas.png);
   position: fixed;
-  -webkit-filter: hue-rotate(315deg);
-  height: 100vh;
+  height: 75vh;
   width: 100vw;
   background-size: cover;
   z-index: -1;
@@ -150,7 +149,7 @@ img.bw {
   z-index: 1;
 }
 #section-what-we-do {
-  margin-top: 100vh;
+  margin-top: 75vh;
 }
 #section-what-we-do .row {
   padding: 10vh;
