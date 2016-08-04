@@ -54,24 +54,26 @@ export default class Home extends React.Component {
                     </div>
                 </section>
                 <div id="subscribe-banner">
-                    <div className="container">
-                        <div className="row">
-                            <TextField 
+                    <div className="row" style={{
+                        width: '75%',
+                        margin: 'auto'
+                    }}>
+                        <div className="col-md-8 col-xs-12">
+                            <TextField
                                 id="email-field"
                                 fullWidth={true}
                                 inputStyle={{color: 'white'}}
                                 underlineFocusStyle={{borderColor: 'white'}}
                                 hintText="you@example.com"
-                                className="col-md-8"
-                            />
-                            <FlatButton
-                                label="Subscribe for Updates"
-                                className="col-md-4"
-                                primary={true}
-                                backgroundColor="#ffffff"
-                                hoverColor="#dddddd"
                             />
                         </div>
+                        <FlatButton
+                            label="Subscribe for Updates"
+                            className="col-md-4 col-xs-12"
+                            primary={true}
+                            backgroundColor="#ffffff"
+                            hoverColor="#dddddd"
+                        />
                     </div>
                 </div>
                 <section id="section-partners" className="content-section">
