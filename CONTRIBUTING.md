@@ -80,7 +80,8 @@ Try to follow these as much as possible:
     }];
     ```
 5. If needed, add code to the `initialize` function.
-6. Your new page should appear at `/page_route`!
+6. Add the route to the `paths` array in webpack.config.js
+7. Your new page should appear at `/page_route`!
 
 ### Adding Reducers
 1. Create a new file, `client/imports/reducer/example.js`. This is where you'll write your reducers.
