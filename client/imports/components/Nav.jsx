@@ -11,7 +11,7 @@ export default class Nav extends React.Component {
                     tabs={[
                         {
                             title: 'About', 
-                        		color: Colors.pink900,
+                        		color: Colors.blue900,
                         		items: [
                         				{
                         						text: 'Values',
@@ -39,25 +39,25 @@ export default class Nav extends React.Component {
                         						href: '/events'
                         				}, {
                         						text: 'Camps',
-                        						href: '#'
+                        						href: '/camps'
                         				}
                         		]
                         }, {
                             title: 'Resources', 
-                        		color: Colors.orange900,
+                        		color: Colors.pink800,
                         		items: [
                         				{
                         						text: 'Mentors',
-                        						href: '#'
+                        						href: '/mentors'
                         				}, {
                         						text: 'Videos',
-                        						href: '#'
+                        						href: '/videos'
                         				}, {
                         						text: 'Curriculum',
-                        						href: '#'
+                        						href: '/curriculum'
                         				}, {
                         						text: 'Student Pack',
-                        						href: '#'
+                        						href: '/student-pack'
                         				}
                         		]
                         }, {
