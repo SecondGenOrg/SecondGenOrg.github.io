@@ -45,7 +45,6 @@ export default class StartChapter extends React.Component {
 				let startup = this.refs.startup_input.getValue();
 				let club = this.refs.club_input.getValue();
 				let how = this.refs.how_input.getValue();
-				console.log(startup, club, how);
 				if(firstName == '' || lastName == '' 
 						|| email == ''|| institution == '' || gradYear == ''
 						|| startup == '' || club == '' || how == '') {
@@ -67,7 +66,6 @@ export default class StartChapter extends React.Component {
 						'Do you plan to incorporate SecondGen into an existing club? If not, what steps have you taken to start your club?': club,
 						'How did you learn about SecondGen?': how
 				}
-				console.log(formData);
 				this.setState({ errorMessage: false });
 				axios({
 					url: 'https://formspree.io/secondgenco@gmail.com',

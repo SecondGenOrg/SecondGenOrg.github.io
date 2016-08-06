@@ -22,7 +22,6 @@ class Navbar extends React.Component {
         return result;
     }
     onPrimaryTabClick(tab, index) {
-        console.log("tab clicked", tab);
         this.setState({
             selectedTabIndex: index
         })
