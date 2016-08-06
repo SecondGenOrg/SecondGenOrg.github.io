@@ -4,7 +4,6 @@ import Paper from 'material-ui/Paper';
 import { Card, CardActions, CardHeader, CardText, CardMedia, CardTitle } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import chaptersData from '../../../constants/chaptersData.json'
-console.log('chaptersData', chaptersData);
 export default class Chapters extends React.Component {
     constructor() {
         super();

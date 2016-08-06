@@ -51,7 +51,6 @@ export default class Partner extends React.Component {
 						'What are you interested in doing?': what,
 						_subject: 'Partner Application'
 				}
-				console.log(formData);
 				this.setState({ errorMessage: false });
 				axios({
 					url: 'https://formspree.io/secondgenco@gmail.com',

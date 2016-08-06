@@ -57,7 +57,6 @@ export default class BecomeMentor extends React.Component {
 						'Twitter': twitter,
 						_subject: 'Mentor Application'
 				}
-				console.log(formData);
 				this.setState({ errorMessage: false });
 				axios({
 					url: 'https://formspree.io/secondgenco@gmail.com',

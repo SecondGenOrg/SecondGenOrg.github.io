@@ -71,7 +71,6 @@ export default class JoinTeam extends React.Component {
 						'What makes you different?': difference,
 						'Describe a time you failed and how you dealt with the problem.': failure
 				}
-				console.log(formData);
 				this.setState({ errorMessage: false });
 				axios({
 					url: 'https://formspree.io/secondgenco@gmail.com',
