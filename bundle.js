@@ -59027,17 +59027,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	        };
 	        var events = [{
 	            name: 'IncubateX',
-	            date: 'August 6-7',
-	            imgSrc: 'http://incubatex.org/sf/img/5.jpg',
-	            url: 'https://incubatex.org',
+	            date: 'August 6-7, 2016',
+	            imgSrc: 'http://incubatex.org/dfw/img/5.jpg',
+	            url: 'http://incubatex.org',
 	            tags: ['Programming', 'Business']
 	        }];
 	        var pastEvents = [{
-	            name: 'Old Event',
-	            date: 'June 9',
-	            imgSrc: 'http://lorempixel.com/400/200/',
-	            url: '#',
-	            tags: ['Music', 'Film']
+	            name: 'EagleHacks',
+	            date: 'April 2-3, 2016',
+	            imgSrc: 'http://www.eaglehacks.com/index_files/EagleHacks%20Pictures/Long%20Logo.png',
+	            url: 'http://www.eaglehacks.com/',
+	            tags: ['Programming']
+	        }, {
+	            name: 'CANHacks',
+	            date: 'July 24, 2015',
+	            imgSrc: 'https://external.fsnc1-1.fna.fbcdn.net/safe_image.php?d=AQBIHYofSh2mcTzO&w=476&h=249&url=https%3A%2F%2Fscontent-dfw1-1.xx.fbcdn.net%2Fhphotos-xta1%2Ft31.0-8%2Fs720x720%2F11119417_1672760412960586_4648656253185441276_o.png&cfs=1&upscale=1',
+	            url: 'http://launchdfw.com/event/canhacks-hackathon/',
+	            tags: ['Programming']
 	        }];
 	        _this.state = { styles: styles, events: events, pastEvents: pastEvents };
 	        return _this;
@@ -59220,7 +59226,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    null,
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: this.props.url },
+	                        { href: this.props.url, target: '_blank' },
 	                        _react2.default.createElement(_FlatButton2.default, {
 	                            primary: true,
 	                            label: 'Learn More'
