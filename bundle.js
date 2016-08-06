@@ -54553,7 +54553,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                className: 'valign',
 	                                src: 'img/logos/partners/rogerwilco.png',
 	                                style: {
-	                                    width: '75%'
+	                                    width: '75%',
+	                                    margin: 'auto'
 	                                }
 	                            })
 	                        )
