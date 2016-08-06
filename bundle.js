@@ -30128,7 +30128,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            width: '100vw',
 	                            margin: 0,
 	                            padding: 0,
-	                            minHeight: '8vh',
+	                            minHeight: window.innerWidth > 600 ? '8vh' : '6vh',
 	                            background: 'white'
 	                        }
 	                    },
@@ -30143,11 +30143,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                top: 0,
 	                                bottom: 0,
 	                                width: 'auto',
-	                                paddingLeft: 10
+	                                paddingLeft: window.innerWidth > 600 ? 10 : 0
 	                            }
 	                        },
 	                        _react2.default.createElement('img', {
-	                            src: '/img/logos/SG.png',
+	                            src: window.innerWidth > 600 ? '/img/logos/SG.png' : '/img/logos/SG_square.png',
 	                            style: {
 	                                height: '100%'
 	                            }
@@ -30177,8 +30177,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                        display: 'inline-flex',
 	                                        height: '100%',
 	                                        margin: 0,
-	                                        paddingLeft: '1.3vw',
-	                                        paddingRight: '1.3vw',
+	                                        paddingLeft: '1.3vmax',
+	                                        paddingRight: '1.3vmax',
 	                                        cursor: 'pointer',
 	                                        fontWeight: 300,
 	                                        background: this.props.tabs[this.state.selectedTabIndex].title == tab.title ? navbarColor : null,
@@ -30190,7 +30190,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                    {
 	                                        className: 'valign',
 	                                        style: {
-	                                            margin: 0
+	                                            margin: 0,
+	                                            fontSize: window.innerWidth > 600 ? '1em' : '0.9em'
 	                                        }
 	                                    },
 	                                    tab.title
@@ -30257,7 +30258,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                            className: 'valign',
 	                                            style: {
 	                                                margin: 0,
-	                                                color: '#eeeeee'
+	                                                color: '#eeeeee',
+	                                                fontSize: window.innerWidth > 600 ? '1em' : '0.85em'
 	                                            }
 	                                        },
 	                                        item.text
@@ -69984,7 +69986,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 590 */
 /***/ function(module, exports) {
 
-	module.exports = "<!--\n    This file is autoloaded and used by meteor.\n    This is the initial html, which react gets attached to.\n-->\n<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\"><!-- html5 version of http-equiv=\"Content-Type\"... -->\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\">\n</head>\n\n<body>\n    <!-- The node react renders itself into. -->\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n</body>\n";
+	module.exports = "<!--\n    This file is autoloaded and used by meteor.\n    This is the initial html, which react gets attached to.\n-->\n<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\"><!-- html5 version of http-equiv=\"Content-Type\"... -->\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/img/logos/SG_square.png\">\n</head>\n\n<body>\n    <!-- The node react renders itself into. -->\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n</body>\n";
 
 /***/ }
 /******/ ])
