@@ -29,14 +29,14 @@ export default class Home extends React.Component {
                             <h1>SecondGen</h1>
                             <h2>We are an entrepreneurship club for <div><span style={{
                                 fontWeight: 700
-                            }} id="splash-typed" /></div></h2>
+                            }} id="splash-typed" >students.</span></div></h2>
                             <Link to="/start-chapter" style={{
                                 marginTop: '6vh',
                                 display: 'block',
                                 minWidth: '30%',
                                 maxWidth: '60%',
                                 width: 'auto',
-                                margin: window.innerHeight > 600 ? 'initial' : 'auto'
+                                margin: window.innerWidth > 600 ? 'initial' : 'auto'
                             }}>
                                 <RaisedButton
                                     label="Start a Chapter"
