@@ -1,6 +1,9 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
+import * as Colors from 'material-ui/styles/colors';
+import { Link } from 'react-router';
 export default class Home extends React.Component {
     constructor() {
         super();
@@ -19,6 +22,30 @@ export default class Home extends React.Component {
         return (
             <div id="home-wrapper" className="page-wrapper">
                 <section id="section-splash">
+                    <div className="valign-wrapper">
+                        <div id="splash-content" className="valign">
+                            <h1>SecondGen</h1>
+                            <h2>We are an entrepreneurship club for <div><span style={{
+                                fontWeight: 700
+                            }} id="splash-typed" /></div></h2>
+                            <Link to="/start-chapter" style={{
+                                        marginTop: '2vh',
+                                        display: 'block',
+                                        width: '30%'
+                                    }}>
+                                <RaisedButton
+                                    label="Start a Chapter"
+                                    backgroundColor={Colors.blue500}
+                                    labelStyle={{
+                                        color: 'white'
+                                    }}
+                                    style={{
+                                        display: 'block'
+                                    }}
+                                />
+                            </Link>
+                        </div>
+                    </div>
                 </section>
                 <section id="section-what-we-do" className="content-section">
                 <h1 id="what-we-do-header" className="section-header">What We Do</h1>

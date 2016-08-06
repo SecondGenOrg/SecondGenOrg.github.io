@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar.jsx';
 import * as Colors from 'material-ui/styles/colors.js';
-console.log('colors:', Colors);
 export default class Nav extends React.Component {
     render() {
         return (
@@ -9,7 +8,7 @@ export default class Nav extends React.Component {
                 <Navbar 
                     id="navbar"
                     tabs={[
-                        {
+                        /*{
                             title: 'About', 
                         		color: Colors.blue900,
                         		items: [
@@ -27,7 +26,7 @@ export default class Nav extends React.Component {
                         						href: '#'
                         				}
                         		]
-                        }, {
+                        }, */{
                             title: 'Programs', 
                         		color: Colors.green900,
                         		items: [

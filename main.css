@@ -11,6 +11,13 @@ html, body, .page-wrapper {
   overflow-y: auto;
   color: #505050;
 }
+.page-wrapper {
+  pointer-events: none;
+  z-index: -23;
+}
+.page-wrapper * {
+  pointer-events: auto;
+}
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
@@ -127,12 +134,43 @@ img.bw {
 }
 /* Homepage styles */
 #home-wrapper #section-splash {
+  pointer-events: auto;
   background-image: url(/img/assets/dallas.png);
+  background-position: center;
   position: fixed;
   height: 75vh;
   width: 100vw;
   background-size: cover;
-  z-index: -1;
+  z-index: 0;
+}
+section {
+  z-index: 2;
+  position: relative;
+}
+#section-splash .valign-wrapper {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  pointer-events: initial;
+}
+@media (max-width: 600px) {
+  #section-splash {
+    text-align: center;
+  }
+  #section-splash .valign-wrapper {
+    height: 100%;
+    width: 85%;
+    margin: auto;
+  }
+}
+#home-wrapper #section-splash h1 {
+  color: white;
+  font-size: 4em;
+}
+#home-wrapper #section-splash h2 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
 }
 
 #home-wrapper #subscribe-panel {
@@ -150,12 +188,20 @@ img.bw {
   font-size: 2.5rem;
   padding-top: 5vh;
 }
+
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
 .content-section {
   background: white;
   z-index: 1;
 }
 #section-what-we-do {
   margin-top: 75vh;
+  z-index: 2
 }
 #section-what-we-do .row {
   padding: 10vh;
@@ -183,12 +229,16 @@ img.bw {
 }
 
 #subscribe-banner {
+  position: relative;
   width: 100vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
   background: #2196f3;
+  z-index: 2;
 }
-
+#section-partners {
+  z-index: 2;
+}
 #section-partners .row {
   padding: 10vh;
   padding-top: 2vh;
@@ -302,4 +352,20 @@ img.bw {
   to {
     transform: translate3d(0, 0, 0);
   }
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
