@@ -54422,9 +54422,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    null,
-	                                    _react2.default.createElement('span', { style: {
-	                                            fontWeight: 700
-	                                        }, id: 'splash-typed' })
+	                                    _react2.default.createElement(
+	                                        'span',
+	                                        { style: {
+	                                                fontWeight: 700
+	                                            }, id: 'splash-typed' },
+	                                        'students.'
+	                                    )
 	                                )
 	                            ),
 	                            _react2.default.createElement(
@@ -54435,7 +54439,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                        minWidth: '30%',
 	                                        maxWidth: '60%',
 	                                        width: 'auto',
-	                                        margin: window.innerHeight > 600 ? 'initial' : 'auto'
+	                                        margin: window.innerWidth > 600 ? 'initial' : 'auto'
 	                                    } },
 	                                _react2.default.createElement(_RaisedButton2.default, {
 	                                    label: 'Start a Chapter',
@@ -70516,7 +70520,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 592 */
 /***/ function(module, exports) {
 
-	module.exports = "<!--\n    This file is autoloaded and used by meteor.\n    This is the initial html, which react gets attached to.\n-->\n<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\"><!-- html5 version of http-equiv=\"Content-Type\"... -->\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/img/logos/SG_square.png\">\n</head>\n\n<body>\n    <!-- The node react renders itself into. -->\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n    <script src=\"https://code.jquery.com/jquery-3.1.0.min.js\" integrity=\"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=\" crossorigin=\"anonymous\"></script>\n    <script type=\"text/javascript\" src=\"/typed.min.js\"></script>\n    <script>\n        $(function(){\n            $(\"#splash-typed\").typed({\n                strings: [\"hackers.\", \"artists.\", \"designers.\", \"film makers.\", \"students.\"],\n                typeSpeed: 30,\n                loop: true\n            });\n        });\n    </script>\n</body>\n";
+	module.exports = "<!--\n    This file is autoloaded and used by meteor.\n    This is the initial html, which react gets attached to.\n-->\n<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\"><!-- html5 version of http-equiv=\"Content-Type\"... -->\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/img/logos/SG_square.png\">\n</head>\n\n<body>\n    <!-- The node react renders itself into. -->\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n    <script src=\"https://code.jquery.com/jquery-3.1.0.min.js\" integrity=\"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=\" crossorigin=\"anonymous\"></script>\n    <script type=\"text/javascript\" src=\"/typed.min.js\"></script>\n    <script>\n        $(function(){\n            $(\"#splash-typed\").typed({\n                strings: [\"students.\", \"hackers.\", \"artists.\", \"designers.\", \"film makers.\"],\n                typeSpeed: 30,\n                loop: true\n            });\n        });\n    </script>\n</body>\n";
 
 /***/ }
 /******/ ])
