@@ -54407,7 +54407,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        { className: 'valign-wrapper' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { id: 'splash-content', className: 'valign' },
+	                            { id: 'splash-content', className: 'valign', style: {
+	                                    display: 'block'
+	                                } },
 	                            _react2.default.createElement(
 	                                'h1',
 	                                null,
@@ -54428,9 +54430,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            _react2.default.createElement(
 	                                _reactRouter.Link,
 	                                { to: '/start-chapter', style: {
-	                                        marginTop: '2vh',
+	                                        marginTop: '6vh',
 	                                        display: 'block',
-	                                        width: '30%'
+	                                        minWidth: '30%',
+	                                        maxWidth: '60%',
+	                                        width: 'auto',
+	                                        margin: window.innerHeight > 600 ? 'initial' : 'auto'
 	                                    } },
 	                                _react2.default.createElement(_RaisedButton2.default, {
 	                                    label: 'Start a Chapter',
@@ -54439,7 +54444,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                        color: 'white'
 	                                    },
 	                                    style: {
-	                                        display: 'block'
+	                                        display: 'block',
+	                                        marginTop: '20px'
 	                                    }
 	                                })
 	                            )
