@@ -69836,7 +69836,7 @@ return /******/ (function(modules) { // webpackBootstrap
 							var email = this.refs.email_input.getValue();
 							var company = this.refs.company_input.getValue();
 							var what = this.refs.what_input.getValue();
-							if (firstName == '' || lastName == '' || email == '' || education == '') {
+							if (firstName == '' || lastName == '' || email == '' || company == '' || what == '') {
 									this.setState({ errorMessage: true });
 									return;
 							}
