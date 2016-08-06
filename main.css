@@ -265,7 +265,7 @@ img.bw {
 	.get-involved-wrapper #form-wrapper {
 		width: 95%;
 		margin: auto;
-		height: 50vh;
+		min-height: 50vh;
 	}
 }
 .get-involved-wrapper form {
