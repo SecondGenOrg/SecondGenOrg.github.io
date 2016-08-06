@@ -54483,7 +54483,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.'
+	                                'We create community hubs in which students get together and learn from workshops, activities, and speakers while also developing and creating their own projects with like minded individuals at schools and public spaces.'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -54502,7 +54502,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.'
+	                                'We run many in-person opportunities through the year from student-run, 24-hour hackathons to international film festivals in which participants collaborate on impactful projects to gain experience, network, and find new opportunities!'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -54521,7 +54521,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.'
+	                                'Members have access to an array of mentors to ask questions about very specific and experience related questions to guide students into the right path when it comes to entrepreneurship.'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -54540,7 +54540,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.'
+	                                'We offer an ever growing array of resources from a guide to topic related video series, so that students can access information and support anywhere they are at any time of day.'
 	                            )
 	                        )
 	                    )
