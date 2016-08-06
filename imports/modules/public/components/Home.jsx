@@ -102,7 +102,8 @@ export default class Home extends React.Component {
                                 className="valign" 
                                 src="img/logos/partners/rogerwilco.png"
                                 style={{
-                                    width: '75%'
+                                    width: '75%',
+                                    margin: 'auto'
                                 }}
                             />
                         </div>
