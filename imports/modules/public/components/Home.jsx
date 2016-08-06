@@ -85,7 +85,7 @@ export default class Home extends React.Component {
                             <p>We offer an ever growing array of resources from a guide to topic related video series, so that students can access information and support anywhere they are at any time of day.</p>
                         </a>
                     </div>
-                </section>
+                </section>{/*}
                 <div id="subscribe-banner">
                     <div className="row" style={{
                         width: '75%',
@@ -108,7 +108,7 @@ export default class Home extends React.Component {
                             hoverColor="#dddddd"
                         />
                     </div>
-                </div>
+                </div>*/}
                 <section id="section-partners" className="content-section">
                     <h1 id="partners-header" className="section-header">Partners</h1>
                     <div className="row">
