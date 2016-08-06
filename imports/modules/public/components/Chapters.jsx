@@ -54,7 +54,7 @@ export default class Chapters extends React.Component {
             	<section className="header-wrapper valign-wrapper"> 
                     <div className="header-text valign">
                         <h1>Chapters</h1>
-                        <p>Some text about chapters or something blah blah blah.</p>
+                        <p>Find a SecondGen chapter near you.</p>
                     </div>
 	            	<ChaptersMap
 	            		id="chapters-map"
