@@ -67087,17 +67087,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = [
 		{
 			"position": {
-				"lat": 37.7749,
-				"lng": -122.4194
-			},
-			"defaultAnimation": 2,
-			"key": "San Francisco, CA",
-			"regional": true,
-			"url": "https://google.com",
-			"imgUrl": "http://www.sanfrancisco.travel/sites/sftraveldev.prod.acquia-sites.com/files/SanFrancisco_0.jpg"
-		},
-		{
-			"position": {
 				"lat": 32.8998,
 				"lng": -97.0403
 			},
