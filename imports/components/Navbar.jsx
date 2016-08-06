@@ -48,7 +48,7 @@ class Navbar extends React.Component {
                         width: '100vw',
                         margin: 0,
                         padding: 0,
-                        minHeight: '8vh',
+                        minHeight: window.innerWidth > 600 ? '8vh' : '6vh',
                         background: 'white'
                     }}
                 >
@@ -61,11 +61,11 @@ class Navbar extends React.Component {
                                         top: 0, 
                                         bottom: 0,
                                         width: 'auto',
-                                        paddingLeft: 10
+                                        paddingLeft: window.innerWidth > 600 ? 10 : 0
                                 }}
                         >
                                 <img
-                                        src="/img/logos/SG.png" 
+                                        src={window.innerWidth > 600 ? '/img/logos/SG.png' : '/img/logos/SG_square.png'}
                                         style={{
                                                 height: '100%'
                                         }}
@@ -93,8 +93,8 @@ class Navbar extends React.Component {
                                             display: 'inline-flex',
                                             height: '100%',
                                             margin: 0,
-                                            paddingLeft: '1.3vw',
-                                            paddingRight: '1.3vw',
+                                            paddingLeft: '1.3vmax',
+                                            paddingRight: '1.3vmax',
                                             cursor: 'pointer',
                                             fontWeight: 300,
                                             background: this.props.tabs[this.state.selectedTabIndex].title == tab.title
@@ -108,7 +108,8 @@ class Navbar extends React.Component {
                                         <p
                                             className="valign"
                                             style={{
-                                                margin: 0
+                                                margin: 0,
+                                                fontSize: window.innerWidth > 600 ? '1em' : '0.9em'
                                             }}
                                         >
                                             {tab.title}
@@ -169,7 +170,8 @@ class Navbar extends React.Component {
                                                     className="valign"
                                                     style={{
                                                         margin: 0,
-                                                        color: '#eeeeee'
+                                                        color: '#eeeeee',
+                                                        fontSize: window.innerWidth > 600 ? '1em' : '0.85em'
                                                     }}
                                                 >
                                                     {item.text}
