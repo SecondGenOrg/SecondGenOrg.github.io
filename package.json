@@ -35,7 +35,7 @@
     "webpack": "webpack --progress --colors",
     "dev": "webpack-dev-server --progress --colors --display-error-details",
     "start": "npm run dev",
-    "publish": "git checkout master && git merge dev -m \"Merge branch 'dev'\" && webpack --progress --colors && git add -A  && git commit -m \"Build@ $(date)\" && git push origin master && git checkout dev "
+    "publish": "git checkout master && git merge dev -m \"Merge branch 'dev'\" && webpack --progress --colors && git add -A  && git commit -m \"Build @ $(date)\" && git push origin master && git checkout dev "
   },
   "repository": {
     "type": "git",
