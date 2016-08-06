@@ -61,28 +61,28 @@ export default class Home extends React.Component {
                                 <img src="/img/assets/club.png"/>
                             </div>
                             <h3>Chapters</h3>
-                            <p>Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.</p>
+                            <p>We create community hubs in which students get together and learn from workshops, activities, and speakers while also developing and creating their own projects with like minded individuals at schools and public spaces.</p>
                         </a>
                         <a className="col-md-3 what-we-do-panel">
                             <div className="img-wrapper">
                                 <img src="/img/assets/eaglehacks.png"/>
                             </div>
                             <h3>Events</h3>
-                            <p>Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.</p>
+                            <p>We run many in-person opportunities through the year from student-run, 24-hour hackathons to international film festivals in which participants collaborate on impactful projects to gain experience, network, and find new opportunities!</p>
                         </a>
                         <a className="col-md-3 what-we-do-panel">
                             <div className="img-wrapper">
                                 <img src="/img/assets/canhacks.jpg"/>
                             </div>
                             <h3>Mentors</h3>
-                            <p>Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.</p>
+                            <p>Members have access to an array of mentors to ask questions about very specific and experience related questions to guide students into the right path when it comes to entrepreneurship.</p>
                         </a>
                         <a className="col-md-3 what-we-do-panel">
                             <div className="img-wrapper">
                                 <img src="/img/assets/ted.png"/>
                             </div>
                             <h3>Resources</h3>
-                            <p>Bacon ipsum dolor amet beef ribs jowl pig short ribs drumstick boudin. Rump pancetta sirloin flank meatloaf spare ribs, shankle leberkas sausage andouille.</p>
+                            <p>We offer an ever growing array of resources from a guide to topic related video series, so that students can access information and support anywhere they are at any time of day.</p>
                         </a>
                     </div>
                 </section>
