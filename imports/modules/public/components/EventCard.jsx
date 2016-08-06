@@ -38,7 +38,7 @@ export default class EventCard extends React.Component {
                     {tagChips}
                 </CardText>
                 <CardActions>
-                    <a href={this.props.url}>
+                    <a href={this.props.url} target="_blank">
                         <FlatButton
                             primary={true}
                             label="Learn More" 
