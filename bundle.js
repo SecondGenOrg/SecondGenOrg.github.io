@@ -62246,7 +62246,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Some text about chapters or something blah blah blah.'
+	                            'Find a SecondGen chapter near you.'
 	                        )
 	                    ),
 	                    _react2.default.createElement(_ChaptersMap2.default, {
