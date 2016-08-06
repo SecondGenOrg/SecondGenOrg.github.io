@@ -13,7 +13,7 @@ class Navbar extends React.Component {
         var result = null;
         this.props.tabs.forEach(function(tab) { // do this on route load
                 tab.items.forEach(function(item) {
-                        if(item.href == window.location.pathname) {
+                        if(item.href == window.location.pathname || item.href+'/' == window.location.pathname) {
                                 result = tab.color;
                         }
                 }, this);
