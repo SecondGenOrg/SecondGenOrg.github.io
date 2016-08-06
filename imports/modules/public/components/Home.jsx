@@ -23,16 +23,21 @@ export default class Home extends React.Component {
             <div id="home-wrapper" className="page-wrapper">
                 <section id="section-splash">
                     <div className="valign-wrapper">
-                        <div id="splash-content" className="valign">
+                        <div id="splash-content" className="valign" style={{
+                            display: 'block'
+                        }}>
                             <h1>SecondGen</h1>
                             <h2>We are an entrepreneurship club for <div><span style={{
                                 fontWeight: 700
                             }} id="splash-typed" /></div></h2>
                             <Link to="/start-chapter" style={{
-                                        marginTop: '2vh',
-                                        display: 'block',
-                                        width: '30%'
-                                    }}>
+                                marginTop: '6vh',
+                                display: 'block',
+                                minWidth: '30%',
+                                maxWidth: '60%',
+                                width: 'auto',
+                                margin: window.innerHeight > 600 ? 'initial' : 'auto'
+                            }}>
                                 <RaisedButton
                                     label="Start a Chapter"
                                     backgroundColor={Colors.blue500}
@@ -40,7 +45,8 @@ export default class Home extends React.Component {
                                         color: 'white'
                                     }}
                                     style={{
-                                        display: 'block'
+                                        display: 'block',
+                                        marginTop: '20px'
                                     }}
                                 />
                             </Link>
