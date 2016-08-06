@@ -32,11 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2000;
   animation: 0.25s fadeIn;
 }
-@media (max-width: 600px) {
-	.header-text {
-		width: 80%;
-	}
-}
+
 .header-text * {
   color: white;
 }
@@ -52,7 +48,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   margin-top: 2vh;
 }
-
+@media (max-width: 600px) {
+  .header-text {
+    width: 80%;
+  }
+  .header-wrapper h1 {
+    font-size: 3em;
+  }
+  .header-wrapper p {
+    font-size: 1.75em;
+  }
+}
 .white-text {
   color: white;
 }
