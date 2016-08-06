@@ -39,7 +39,7 @@ export default class Partner extends React.Component {
 				let company = this.refs.company_input.getValue();
 				let what = this.refs.what_input.getValue();
 				if(firstName == '' || lastName == '' 
-						|| email == ''|| education == '') {
+						|| email == ''|| company == '' || what == '') {
 						this.setState({ errorMessage: true });
 						return;
 				}
