@@ -30090,7 +30090,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }, {
 	        key: 'onPrimaryTabClick',
 	        value: function onPrimaryTabClick(tab, index) {
-	            console.log("tab clicked", tab);
 	            this.setState({
 	                selectedTabIndex: index
 	            });
@@ -62201,8 +62200,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	console.log('chaptersData', _chaptersData2.default);
-
 	var Chapters = function (_React$Component) {
 	    _inherits(Chapters, _React$Component);
 
@@ -67259,7 +67256,6 @@ return /******/ (function(modules) { // webpackBootstrap
 							var startup = this.refs.startup_input.getValue();
 							var club = this.refs.club_input.getValue();
 							var how = this.refs.how_input.getValue();
-							console.log(startup, club, how);
 							if (firstName == '' || lastName == '' || email == '' || institution == '' || gradYear == '' || startup == '' || club == '' || how == '') {
 									this.setState({ errorMessage: true });
 									return;
@@ -67279,7 +67275,6 @@ return /******/ (function(modules) { // webpackBootstrap
 									'Do you plan to incorporate SecondGen into an existing club? If not, what steps have you taken to start your club?': club,
 									'How did you learn about SecondGen?': how
 							};
-							console.log(formData);
 							this.setState({ errorMessage: false });
 							(0, _axios2.default)({
 									url: 'https://formspree.io/secondgenco@gmail.com',
@@ -69036,7 +69031,6 @@ return /******/ (function(modules) { // webpackBootstrap
 									'Twitter': twitter,
 									_subject: 'Mentor Application'
 							};
-							console.log(formData);
 							this.setState({ errorMessage: false });
 							(0, _axios2.default)({
 									url: 'https://formspree.io/secondgenco@gmail.com',
@@ -69392,7 +69386,6 @@ return /******/ (function(modules) { // webpackBootstrap
 									'What makes you different?': difference,
 									'Describe a time you failed and how you dealt with the problem.': failure
 							};
-							console.log(formData);
 							this.setState({ errorMessage: false });
 							(0, _axios2.default)({
 									url: 'https://formspree.io/secondgenco@gmail.com',
@@ -69848,7 +69841,6 @@ return /******/ (function(modules) { // webpackBootstrap
 									'What are you interested in doing?': what,
 									_subject: 'Partner Application'
 							};
-							console.log(formData);
 							this.setState({ errorMessage: false });
 							(0, _axios2.default)({
 									url: 'https://formspree.io/secondgenco@gmail.com',
