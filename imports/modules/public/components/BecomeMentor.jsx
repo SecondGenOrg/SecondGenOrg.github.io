@@ -90,7 +90,7 @@ export default class BecomeMentor extends React.Component {
 	                    			<p>Get started by filling out this form.</p>
 	                    			<div className="row">
 	                    					<div
-	                    							className="col-md-6"
+	                    							className="col-xs-12 col-sm-6"
 	                    							style={styles.inputWrapperStyle}
 	                    					>
 			                    					<TextField 
@@ -103,7 +103,7 @@ export default class BecomeMentor extends React.Component {
 			                    					/>
 			                    			</div>
 			                    			<div
-	                    							className="col-md-6"
+	                    							className="col-xs-12 col-sm-6"
 	                    							style={styles.inputWrapperStyle}
 	                    					>
 			                    					<TextField 
@@ -118,7 +118,7 @@ export default class BecomeMentor extends React.Component {
 	                    			</div>
 	                    			<div className="row">
 	                    					<div
-	                    							className="col-md-12"
+	                    							className="col-xs-12 col-sm-12"
 	                    							style={styles.inputWrapperStyle}
 	                    					>
 			                    					<TextField 
@@ -133,7 +133,7 @@ export default class BecomeMentor extends React.Component {
 			                    	</div>
 	                    			<div className="row">
 	                    					<div
-	                    							className="col-md-6"
+	                    							className="col-xs-12 col-sm-6"
 	                    							style={styles.inputWrapperStyle}
 	                    					>
 			                    					<TextField 
@@ -146,7 +146,7 @@ export default class BecomeMentor extends React.Component {
 			                    					/>
 			                    			</div>
 			                    			<div
-	                    							className="col-md-6"
+	                    							className="col-xs-12 col-sm-6"
 	                    							style={styles.inputWrapperStyle}
 	                    					>
 			                    					<TextField 
@@ -161,7 +161,7 @@ export default class BecomeMentor extends React.Component {
 	                    			</div>
 	                    			<div className="row">
 	                    					<div
-	                    							className="col-md-6"
+	                    							className="col-xs-12 col-sm-6"
 	                    							style={styles.inputWrapperStyle}
 	                    					>
 			                    					<TextField 
@@ -174,7 +174,7 @@ export default class BecomeMentor extends React.Component {
 			                    					/>
 			                    			</div>
 			                    			<div
-	                    							className="col-md-6"
+	                    							className="col-xs-12 col-sm-6"
 	                    							style={styles.inputWrapperStyle}
 	                    					>
 			                    					<TextField 
@@ -189,7 +189,7 @@ export default class BecomeMentor extends React.Component {
 	                    			</div>
 	                    			<div className="row">
 	                    					<div
-	                    							className="col-md-12"
+	                    							className="col-xs-12 col-sm-12"
 	                    							style={styles.inputWrapperStyle}
 	                    					>
 			                    					<TextField 
