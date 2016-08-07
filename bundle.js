@@ -70557,7 +70557,6 @@ return /******/ (function(modules) { // webpackBootstrap
 													return _react2.default.createElement(
 																	'div',
 																	{ className: 'page-wrapper', id: 'faq-wrapper' },
-																	_react2.default.createElement('div', { style: { height: '5vh' } }),
 																	_react2.default.createElement(
 																					'section',
 																					{ className: 'header-wrapper valign-wrapper', style: styles.sectionHeader },
