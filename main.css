@@ -153,16 +153,6 @@ section {
   margin: auto;
   pointer-events: initial;
 }
-@media (max-width: 600px) {
-  #section-splash {
-    text-align: center;
-  }
-  #section-splash .valign-wrapper {
-    height: 100%;
-    width: 85%;
-    margin: auto;
-  }
-}
 #home-wrapper #section-splash h1 {
   color: white;
   font-size: 4em;
@@ -202,6 +192,26 @@ section {
 #section-what-we-do {
   margin-top: 75vh;
   z-index: 2
+}
+
+@media (max-width: 600px) {
+  #home-wrapper #section-splash {
+    text-align: center;
+    height: 100vh;
+  }
+  #section-splash .valign-wrapper {
+    height: 100%;
+    width: 85%;
+    margin: auto;
+  }
+  #section-what-we-do {
+    margin-top: 100vh;
+  }
+  #home-wrapper #section-splash h2 {
+    color: white;
+    font-size: 2.2em;
+    font-weight: 300;
+  }
 }
 #section-what-we-do .row {
   padding: 10vh;
