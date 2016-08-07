@@ -70599,7 +70599,6 @@ return /******/ (function(modules) { // webpackBootstrap
 																																									fontSize: '1.4em',
 																																									fontWeight: 300,
 																																									fontFamily: '"Roboto Slab", "Roboto", Helvetica, sans-serif',
-																																									lineHeight: 1,
 																																									animation: '1s openCard',
 																																									WebkitAnimation: '1s openCard'
 																																					} },
