@@ -28,7 +28,6 @@ export default class Component extends React.Component {
     		const { styles } = this.state;
         return (
             <div className="page-wrapper" id="faq-wrapper">
-           		  <div style={{ height: '5vh' }} />
                 <section className="header-wrapper valign-wrapper" style={ styles.sectionHeader }> 
                     <div className="header-text valign">
                         <h1>Frequently Asked Questions</h1> 
