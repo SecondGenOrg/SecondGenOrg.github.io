@@ -70584,7 +70584,7 @@ return /******/ (function(modules) { // webpackBootstrap
 																													_Card.Card,
 																													{ key: item.question, style: {
 																																					maxHeight: '100vh'
-																																	} },
+																																	}, zDepth: 3 },
 																													_react2.default.createElement(_Card.CardHeader, {
 																																	title: item.question,
 																																	actAsExpander: true,
