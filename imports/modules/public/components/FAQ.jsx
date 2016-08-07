@@ -41,7 +41,7 @@ export default class Component extends React.Component {
 														return (
 																<Card key={item.question} style={{ 
 																		maxHeight: '100vh'
-																}}>
+																}} zDepth={3}>
 																    <CardHeader
 																	      title={item.question}
 																	      actAsExpander={true}
