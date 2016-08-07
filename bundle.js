@@ -54435,9 +54435,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                { to: '/start-chapter', style: {
 	                                        marginTop: '6vh',
 	                                        display: 'block',
-	                                        minWidth: '30%',
-	                                        maxWidth: '60%',
-	                                        width: 'auto',
+	                                        width: '60%',
 	                                        margin: window.innerWidth > 600 ? 'initial' : 'auto'
 	                                    } },
 	                                _react2.default.createElement(_RaisedButton2.default, {
