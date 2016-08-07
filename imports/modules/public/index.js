@@ -10,6 +10,7 @@ import Videos from './components/Videos.jsx';
 import StudentPack from './components/StudentPack.jsx';
 import Curriculum from './components/Curriculum.jsx';
 import Camps from './components/Camps.jsx';
+import FAQ from './components/FAQ.jsx';
 
 export { Home as Home };
 export { Events as Events };
@@ -23,6 +24,7 @@ export { Videos as Videos };
 export { StudentPack as StudentPack };
 export { Curriculum as Curriculum };
 export { Camps as Camps };
+export { FAQ as FAQ };
 
 export function initialize() {
 
@@ -65,5 +67,8 @@ export const routes = [
 	}, {
 		path: 'camps',
 		component: Camps
+	}, {
+		path: 'faq',
+		component: FAQ
 	}
 ];

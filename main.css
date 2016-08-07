@@ -343,6 +343,15 @@ section {
 	font-family: "Roboto", Helvetica, sans-serif;
 	font-weight: 300;
 }
+/* FAQ page styles */
+#faq-wrapper .content-wrapper {
+  margin-top: 45vh;
+  min-height: 52vh;
+}
+#faq-wrapper #cover {
+  margin-top: -5vh;
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {
@@ -363,7 +372,24 @@ section {
     transform: translate3d(0, 0, 0);
   }
 }
+@-webkit-keyframes cardOpen {
+  from {
+    max-height: 0;
+  }
 
+  to {
+    max-height: 500px;
+  }
+}
+@keyframes cardOpen {
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: 500px;
+  }
+}
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
