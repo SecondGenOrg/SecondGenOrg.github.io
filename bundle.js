@@ -65,7 +65,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _index3 = __webpack_require__(602);
+	var _index3 = __webpack_require__(603);
 
 	var _index4 = _interopRequireDefault(_index3);
 
@@ -109,7 +109,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var Public = _interopRequireWildcard(_public);
 
-	var _reactGa = __webpack_require__(592);
+	var _reactGa = __webpack_require__(593);
 
 	var _reactGa2 = _interopRequireDefault(_reactGa);
 
@@ -54229,7 +54229,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.routes = exports.Camps = exports.Curriculum = exports.StudentPack = exports.Videos = exports.Mentors = exports.Partner = exports.JoinTeam = exports.BecomeMentor = exports.StartChapter = exports.Chapters = exports.Events = exports.Home = undefined;
+	exports.routes = exports.FAQ = exports.Camps = exports.Curriculum = exports.StudentPack = exports.Videos = exports.Mentors = exports.Partner = exports.JoinTeam = exports.BecomeMentor = exports.StartChapter = exports.Chapters = exports.Events = exports.Home = undefined;
 	exports.initialize = initialize;
 
 	var _Home = __webpack_require__(444);
@@ -54280,6 +54280,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Camps2 = _interopRequireDefault(_Camps);
 
+	var _FAQ = __webpack_require__(592);
+
+	var _FAQ2 = _interopRequireDefault(_FAQ);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.Home = _Home2.default;
@@ -54294,6 +54298,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.StudentPack = _StudentPack2.default;
 	exports.Curriculum = _Curriculum2.default;
 	exports.Camps = _Camps2.default;
+	exports.FAQ = _FAQ2.default;
 	function initialize() {}
 
 	var routes = exports.routes = [{
@@ -54332,6 +54337,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	}, {
 		path: 'camps',
 		component: _Camps2.default
+	}, {
+		path: 'faq',
+		component: _FAQ2.default
 	}];
 
 /***/ },
@@ -70482,6 +70490,138 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+					value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Paper = __webpack_require__(276);
+
+	var _Paper2 = _interopRequireDefault(_Paper);
+
+	var _Card = __webpack_require__(477);
+
+	var _colors = __webpack_require__(281);
+
+	var Colors = _interopRequireWildcard(_colors);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Component = function (_React$Component) {
+					_inherits(Component, _React$Component);
+
+					function Component() {
+									_classCallCheck(this, Component);
+
+									var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Component).call(this));
+
+									var styles = {
+													sectionHeader: {
+																	background: Colors.blue500
+													}
+									};
+									_this.items = [{
+													question: 'What is SecondGen?',
+													answer: 'SecondGen is an entrepreneurship club for driven students. We provide various resources for young entrepreneurs including access to experienced mentors and an in-depth curriculum.'
+									}, {
+													question: 'What is the age range for SecondGen members?',
+													answer: 'Members are generally between 14 and 21 years of age, as SecondGen supports both high school and college students. However, there is no hard restriction on member age.'
+									}, {
+													question: 'Is there a membership fee?',
+													answer: 'No. As of Fall 2016, there will be no global membership fee to access SecondGen\'s online resources. However, local or regional chapters may have fees for shirts, venues, or other reasons.'
+									}];
+									_this.state = { styles: styles };
+									return _this;
+					}
+
+					_createClass(Component, [{
+									key: 'render',
+									value: function render() {
+													var styles = this.state.styles;
+
+													return _react2.default.createElement(
+																	'div',
+																	{ className: 'page-wrapper', id: 'faq-wrapper' },
+																	_react2.default.createElement('div', { style: { height: '5vh' } }),
+																	_react2.default.createElement(
+																					'section',
+																					{ className: 'header-wrapper valign-wrapper', style: styles.sectionHeader },
+																					_react2.default.createElement(
+																									'div',
+																									{ className: 'header-text valign' },
+																									_react2.default.createElement(
+																													'h1',
+																													null,
+																													'Frequently Asked Questions'
+																									),
+																									_react2.default.createElement(
+																													'p',
+																													null,
+																													'Who, what, where, when, and why.'
+																									)
+																					)
+																	),
+																	_react2.default.createElement(
+																					'div',
+																					{ className: 'content-wrapper' },
+																					this.items.map(function (item) {
+																									return _react2.default.createElement(
+																													_Card.Card,
+																													{ key: item.question, style: {
+																																					maxHeight: '100vh'
+																																	} },
+																													_react2.default.createElement(_Card.CardHeader, {
+																																	title: item.question,
+																																	actAsExpander: true,
+																																	showExpandableButton: true,
+																																	titleStyle: {
+																																					fontSize: '1.7em'
+																																	}
+																													}),
+																													_react2.default.createElement(
+																																	_Card.CardText,
+																																	{ expandable: true, style: {
+																																									fontSize: '1.4em',
+																																									fontWeight: 300,
+																																									fontFamily: '"Roboto Slab", "Roboto", Helvetica, sans-serif',
+																																									lineHeight: 1,
+																																									animation: '1s openCard',
+																																									WebkitAnimation: '1s openCard'
+																																					} },
+																																	item.answer
+																													)
+																									);
+																					}),
+																					_react2.default.createElement(_Paper2.default, { id: 'cover', zDepth: 5 })
+																	)
+													);
+									}
+					}]);
+
+					return Component;
+	}(_react2.default.Component);
+
+	exports.default = Component;
+
+/***/ },
+/* 593 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/**
 	 * React Google Analytics Module
 	 *
@@ -70493,12 +70633,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * Utilities
 	 */
-	var format = __webpack_require__(593);
-	var removeLeadingSlash = __webpack_require__(598);
-	var trim = __webpack_require__(596);
+	var format = __webpack_require__(594);
+	var removeLeadingSlash = __webpack_require__(599);
+	var trim = __webpack_require__(597);
 
-	var warn = __webpack_require__(597);
-	var log = __webpack_require__(599);
+	var warn = __webpack_require__(598);
+	var log = __webpack_require__(600);
 
 	var _debug = false;
 	var _titleCase = true;
@@ -70968,7 +71108,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 
-	var OutboundLink = __webpack_require__(600);
+	var OutboundLink = __webpack_require__(601);
 	OutboundLink.origTrackLink = OutboundLink.trackLink;
 	OutboundLink.trackLink = ReactGA.outboundLink.bind(ReactGA);
 	ReactGA.OutboundLink = OutboundLink;
@@ -70977,12 +71117,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 593 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var mightBeEmail = __webpack_require__(594);
-	var toTitleCase = __webpack_require__(595);
-	var warn = __webpack_require__(597);
+	var mightBeEmail = __webpack_require__(595);
+	var toTitleCase = __webpack_require__(596);
+	var warn = __webpack_require__(598);
 
 	var _redacted = 'REDACTED (Potential Email Address)';
 
@@ -71003,7 +71143,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 594 */
+/* 595 */
 /***/ function(module, exports) {
 
 	// See if s could be an email address. We don't want to send personal data like email.
@@ -71017,7 +71157,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 595 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -71026,7 +71166,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * https://github.com/gouch/to-title-case
 	 */
 
-	var trim = __webpack_require__(596);
+	var trim = __webpack_require__(597);
 
 	function toTitleCase(s) {
 	  var smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|vs?\.?|via)$/i;
@@ -71054,7 +71194,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 596 */
+/* 597 */
 /***/ function(module, exports) {
 
 	// GA strings need to have leading/trailing whitespace trimmed, and not all
@@ -71068,7 +71208,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 597 */
+/* 598 */
 /***/ function(module, exports) {
 
 	function warn(s) {
@@ -71079,7 +71219,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 598 */
+/* 599 */
 /***/ function(module, exports) {
 
 	function removeLeadingSlash(s) {
@@ -71094,7 +71234,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 599 */
+/* 600 */
 /***/ function(module, exports) {
 
 	function log(s) {
@@ -71105,11 +71245,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 600 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(2);
-	var assign = __webpack_require__(601);
+	var assign = __webpack_require__(602);
 
 	var NEWTAB = '_blank';
 
@@ -71154,7 +71294,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 601 */
+/* 602 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -71243,7 +71383,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 602 */
+/* 603 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--\n    This file is autoloaded and used by meteor.\n    This is the initial html, which react gets attached to.\n-->\n<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\"><!-- html5 version of http-equiv=\"Content-Type\"... -->\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/img/logos/SG_square.png\">\n</head>\n\n<body>\n    <!-- The node react renders itself into. -->\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n    <script src=\"https://code.jquery.com/jquery-3.1.0.min.js\" integrity=\"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=\" crossorigin=\"anonymous\"></script>\n    <script type=\"text/javascript\" src=\"/typed.min.js\"></script>\n    <script>\n        $(function(){\n            $(\"#splash-typed\").typed({\n                strings: [\"students.\", \"hackers.\", \"artists.\", \"designers.\", \"film makers.\"],\n                typeSpeed: 30,\n                loop: true\n            });\n        });\n    </script>\n</body>\n";
