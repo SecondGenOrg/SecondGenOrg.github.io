@@ -4,7 +4,7 @@ var paths = ['/home', '/events', '/chapters',
     '/start-chapter', '/become-mentor', '/join-team', 
     '/partner', '/mentors', '/videos', 
     '/student-pack', '/curriculum', '/camps',
-    '/faq'];
+    '/faq', '/team'];
 
 module.exports = {
   entry: './main.js',
