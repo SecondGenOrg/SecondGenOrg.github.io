@@ -51,7 +51,7 @@ export default class Events extends React.Component {
         const pastEvents = [{
             name: 'IncubateX',
             date: 'August 6-7, 2016',
-            imgSrc: 'http://incubatex.org/img/IncubateLogoW.png',
+            imgSrc: 'https://avatars3.githubusercontent.com/u/18596616?v=3&s=200',
             url: 'http://incubatex.org',
             tags: ['Business', 'Hackathon']
         }, {
