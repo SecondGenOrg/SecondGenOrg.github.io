@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 .header-wrapper p {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", "Roboto", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 2em;
   line-height: 1;
@@ -161,6 +161,7 @@ section {
   color: white;
   font-size: 2.5em;
   font-weight: 300;
+  font-family: "Roboto Slab", "Roboto", Helvetica, sans-serif;
 }
 
 #home-wrapper #subscribe-panel {
@@ -351,7 +352,40 @@ section {
 #faq-wrapper #cover {
   margin-top: -5vh;
 }
-
+/* Team page styles */
+#team-wrapper .content-wrapper {
+  margin-top: 50vh;
+  min-height: 47vh;
+  z-index: 10
+}
+#team-wrapper .team-item {
+  text-align: center;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-bottom: 30px;
+}
+#team-wrapper .team-item img {
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#team-wrapper .team-item .name {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+#team-wrapper .team-item .title {
+  font-weight: 300;
+}
+#team-wrapper #cover {
+  margin-top: -15vh;
+}
+@media (max-width: 600px) {
+  #team-wrapper .team-item {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
 /* Animations */
 @keyframes fadeIn {
   from {

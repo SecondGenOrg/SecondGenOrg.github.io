@@ -11,6 +11,7 @@ import StudentPack from './components/StudentPack.jsx';
 import Curriculum from './components/Curriculum.jsx';
 import Camps from './components/Camps.jsx';
 import FAQ from './components/FAQ.jsx';
+import Team from './components/Team.jsx';
 
 export { Home as Home };
 export { Events as Events };
@@ -25,6 +26,7 @@ export { StudentPack as StudentPack };
 export { Curriculum as Curriculum };
 export { Camps as Camps };
 export { FAQ as FAQ };
+export { Team as Team };
 
 export function initialize() {
 
@@ -70,5 +72,8 @@ export const routes = [
 	}, {
 		path: 'faq',
 		component: FAQ
+	}, {
+		path: 'team',
+		component: Team
 	}
 ];
