@@ -66,7 +66,7 @@ export default class Component extends React.Component {
 		                		{
 		                				this.team.map(function(person) {
 		                						return (
-		                								<div className="team-item col-xs-12 col-sm-4" key={person.name}>
+		                								<div className="team-item col-xs-12 col-sm-3" key={person.name}>
 		                										<img src={person.imgSrc} />
 		                										<h3 className="name">{person.name}</h3>
 		                										<h4 className="title">{person.title}</h4>
