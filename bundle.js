@@ -59019,7 +59019,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var events = [{
 	            name: 'EagleHacks 2',
 	            date: 'November',
-	            imgSrc: 'http://www.eaglehacks.com/index_files/EagleHacks%20Pictures/Long%20Logo.png',
+	            imgSrc: '/img/events/eaglehacks3.png',
 	            url: 'http://www.eaglehacks.com',
 	            tags: ['Tech', 'Hackathon']
 	        }, {
@@ -59047,7 +59047,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }, {
 	            name: 'EagleHacks 3',
 	            date: 'April 2017',
-	            imgSrc: 'http://www.eaglehacks.com/index_files/EagleHacks%20Pictures/Long%20Logo.png',
+	            imgSrc: '/img/events/eaglehacks3.png',
 	            url: 'http://www.eaglehacks.com',
 	            tags: ['Tech', 'Hackathon']
 	        }];
