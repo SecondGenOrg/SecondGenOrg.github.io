@@ -271,7 +271,6 @@ section {
   height: 25vh;
   width: auto;
   object-fit: cover;
-  object-position: center;
 }
 #events-wrapper .content-wrapper {
   margin-top: 40vh;
