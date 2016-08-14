@@ -46,7 +46,7 @@ export default class ChaptersMap extends Component {
 
   handleMarkerClick(index, event) {
     let { markers } = this.state;
-    alert(markers[index].key);
+    // alert(markers[index].key);
   }
 
   render() {
