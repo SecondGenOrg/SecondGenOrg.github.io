@@ -306,12 +306,12 @@ section {
   z-index: 201;
 }
 #chapters-wrapper .chapter-card-wrapper > div {
-  height: 18vh;
+  min-height: 13vh;
   position: relative;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #chapters-wrapper .chapter-card-wrapper > div {
-    height: 22vh;
+    min-height: 18vh;
   }
 }
 #chapters-wrapper .chapter-card-wrapper .img-wrapper {
