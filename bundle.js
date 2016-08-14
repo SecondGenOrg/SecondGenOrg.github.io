@@ -67208,7 +67208,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				"lng": -96.64443
 			},
 			"defaultAnimation": 2,
-			"key": "Plano East Senior High School",
+			"key": "Plano East Senior High",
 			"regional": false,
 			"city": "Dallas, TX",
 			"imgUrl": "http://www.lennar.com/images/com/images/new-homes/18/14/mhi/DallasSkyline21200X540opt.jpg",
