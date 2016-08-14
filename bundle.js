@@ -62453,8 +62453,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: "handleMarkerClick",
 	    value: function handleMarkerClick(index, event) {
 	      var markers = this.state.markers;
-
-	      alert(markers[index].key);
+	      // alert(markers[index].key);
 	    }
 	  }, {
 	    key: "render",
