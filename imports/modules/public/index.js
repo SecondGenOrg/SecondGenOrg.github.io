@@ -12,6 +12,7 @@ import Curriculum from './components/Curriculum.jsx';
 import Camps from './components/Camps.jsx';
 import FAQ from './components/FAQ.jsx';
 import Team from './components/Team.jsx';
+import Partners from './components/Partners.jsx';
 
 export { Home as Home };
 export { Events as Events };
@@ -27,6 +28,7 @@ export { Curriculum as Curriculum };
 export { Camps as Camps };
 export { FAQ as FAQ };
 export { Team as Team };
+export { Partners as Partners };
 
 export function initialize() {
 
@@ -75,5 +77,8 @@ export const routes = [
 	}, {
 		path: 'team',
 		component: Team
+	}, {
+		path: 'partners',
+		component: Partners
 	}
 ];
