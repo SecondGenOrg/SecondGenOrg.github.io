@@ -385,6 +385,14 @@ section {
     padding-right: 15vw;
   }
 }
+#partners-wrapper .content-wrapper {
+  margin-top: 50vh;
+  min-height: 47vh;
+  z-index: 10
+}
+#partners-wrapper #cover {
+  margin-top: -5vh;
+}
 /* Animations */
 @keyframes fadeIn {
   from {
