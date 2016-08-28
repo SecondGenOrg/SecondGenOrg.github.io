@@ -400,7 +400,7 @@ section {
   margin-top: 45vh;
 }
 #about-us-wrapper #inner-content-wrapper {
-  width: 66.7%;
+  width: 75%;
   margin: auto;
   padding: 7vh;
 }
@@ -417,7 +417,17 @@ section {
 }
 #about-us-wrapper #about-img {
   width: 100%;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
+  margin-top: 0vh;
+}
+#about-us-wrapper h2 {
+  font-family: "Roboto Slab", Roboto;
+}
+#about-us-wrapper #inner-content-wrapper p {
+  text-indent: 3vh;
+  line-height: 1.5;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 /* Animations */
 @keyframes fadeIn {
