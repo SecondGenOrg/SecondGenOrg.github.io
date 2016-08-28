@@ -71073,7 +71073,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    _react2.default.createElement(
 	                        _Paper2.default,
 	                        { zDepth: 3, id: 'inner-content-wrapper' },
-	                        _react2.default.createElement('img', { id: 'about-img', src: '/img/team/team.jpeg' }),
 	                        _react2.default.createElement(
 	                            'h2',
 	                            null,
@@ -71082,7 +71081,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'SecondGen is an entrepreneurial organization for artists, programmers, film-makers, musicians,  journalists, and business-minded youth. It are a resource for students to learn how to develop their hobbies and talents into business opportunities and careers. Through SecondGen’s 120 chapters worldwide, mentorship program, chapter resources, and events, students are able to develop an understanding of new and familiar industries and technologies and simultaneously hone their entrepreneurial skills.'
+	                            ' SecondGen is an entrepreneurial organization for artists, programmers, film-makers, musicians,  journalists, and business-minded youth. It are a resource for students to learn how to develop their hobbies and talents into business opportunities and careers. Through SecondGen’s 120 chapters worldwide, mentorship program, chapter resources, and events, students are able to develop an understanding of new and familiar industries and technologies and simultaneously hone their entrepreneurial skills.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'h2',
@@ -71092,8 +71091,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Each club meets bi-weekly for a two hour session. The structure varies club to club, but most meetings involve activities, a speaker, sharing of current projects, and finally work and collaboration time on projects for members. SecondGen Chapters & Individuals use our curriculum, events, network, competitions, and mentorship to learn new things, while they pursue their own project/business idea throughout the year.'
+	                            ' Each club meets bi-weekly for a two hour session. The structure varies club to club, but most meetings involve activities, a speaker, sharing of current projects, and finally work and collaboration time on projects for members. SecondGen Chapters & Individuals use our curriculum, events, network, competitions, and mentorship to learn new things, while they pursue their own project/business idea throughout the year.'
 	                        ),
+	                        _react2.default.createElement('img', { id: 'about-img', src: '/img/team/team.jpeg' }),
 	                        _react2.default.createElement(
 	                            'h2',
 	                            null,
