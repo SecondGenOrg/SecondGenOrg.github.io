@@ -71012,6 +71012,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var Colors = _interopRequireWildcard(_colors);
 
+	var _reactRouter = __webpack_require__(176);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -71061,13 +71063,75 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Text text text text text text text text.'
+	                            'Learn more about SecondGen.'
 	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'content-wrapper' },
+	                    _react2.default.createElement(
+	                        _Paper2.default,
+	                        { zDepth: 3, id: 'inner-content-wrapper' },
+	                        _react2.default.createElement('img', { id: 'about-img', src: '/img/team/team.jpeg' }),
+	                        _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'What is SecondGen?'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'SecondGen is an entrepreneurial organization for artists, programmers, film-makers, musicians,  journalists, and business-minded youth. It are a resource for students to learn how to develop their hobbies and talents into business opportunities and careers. Through SecondGen’s 120 chapters worldwide, mentorship program, chapter resources, and events, students are able to develop an understanding of new and familiar industries and technologies and simultaneously hone their entrepreneurial skills.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'What does SecondGen at your school look like?'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Each club meets bi-weekly for a two hour session. The structure varies club to club, but most meetings involve activities, a speaker, sharing of current projects, and finally work and collaboration time on projects for members. SecondGen Chapters & Individuals use our curriculum, events, network, competitions, and mentorship to learn new things, while they pursue their own project/business idea throughout the year.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'Who are our members? (With icons)'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Filmmakers Musicians Artist Programmers Entrepreneurs Builders Changemakers '
+	                        ),
+	                        _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'Why do students love SecondGen partnered Chapters?'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'SecondGen is an organization created and managed by students just like yourself. Whether you know what you\'re doing or not, SecondGen is the way to go. We believe that students of all backgrounds should have an opportunity to do what you love and turn that love from a hobby into a career or even your own business. With our programs you’ll foster new friends, gain opportunities, and grow as a person!'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Want to expand SecondGen to your school? Check out our ',
+	                            _react2.default.createElement(
+	                                _reactRouter.Link,
+	                                { to: '/start-chapter' },
+	                                'Start A Club Application'
+	                            ),
+	                            ', or if you already have a club, check out our ',
+	                            _react2.default.createElement(
+	                                _reactRouter.Link,
+	                                { to: '/partner' },
+	                                'Partner Application'
+	                            ),
+	                            '.'
+	                        )
+	                    ),
 	                    _react2.default.createElement(_Paper2.default, { id: 'cover', zDepth: 5 })
 	                )
 	            );
