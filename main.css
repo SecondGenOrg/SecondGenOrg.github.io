@@ -393,6 +393,15 @@ section {
 #partners-wrapper #cover {
   margin-top: -5vh;
 }
+
+#about-us-wrapper .content-wrapper {
+  margin-top: 50vh;
+  min-height: 47vh;
+  z-index: 10
+}
+#about-us-wrapper #cover {
+  margin-top: -5vh;
+}
 /* Animations */
 @keyframes fadeIn {
   from {
