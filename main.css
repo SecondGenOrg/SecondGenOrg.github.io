@@ -385,6 +385,7 @@ section {
     padding-right: 15vw;
   }
 }
+/* Partners page styles */
 #partners-wrapper .content-wrapper {
   margin-top: 50vh;
   min-height: 47vh;
@@ -394,13 +395,29 @@ section {
   margin-top: -5vh;
 }
 
+/* About page styles */
 #about-us-wrapper .content-wrapper {
-  margin-top: 50vh;
-  min-height: 47vh;
-  z-index: 10
+  margin-top: 45vh;
 }
-#about-us-wrapper #cover {
-  margin-top: -5vh;
+#about-us-wrapper #inner-content-wrapper {
+  width: 66.7%;
+  margin: auto;
+  padding: 7vh;
+}
+@media (max-width: 600px) {
+  #about-us-wrapper #inner-content-wrapper {
+    width: 95%;
+    margin: auto;
+    min-height: 50vh;
+  }
+}
+#about-us-wrapper a {
+  text-decoration: none;
+  color: #2196F3;
+}
+#about-us-wrapper #about-img {
+  width: 100%;
+  margin-bottom: 3vh;
 }
 /* Animations */
 @keyframes fadeIn {
