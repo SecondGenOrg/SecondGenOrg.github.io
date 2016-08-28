@@ -13,6 +13,7 @@ import Camps from './components/Camps.jsx';
 import FAQ from './components/FAQ.jsx';
 import Team from './components/Team.jsx';
 import Partners from './components/Partners.jsx';
+import AboutUs from './components/AboutUs.jsx';
 
 export { Home as Home };
 export { Events as Events };
@@ -29,7 +30,7 @@ export { Camps as Camps };
 export { FAQ as FAQ };
 export { Team as Team };
 export { Partners as Partners };
-
+export { AboutUs as AboutUs };
 export function initialize() {
 
 }
@@ -80,5 +81,8 @@ export const routes = [
 	}, {
 		path: 'partners',
 		component: Partners
+	}, {
+		path: 'about-us',
+		component: AboutUs
 	}
 ];
