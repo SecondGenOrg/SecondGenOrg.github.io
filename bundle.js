@@ -71097,12 +71097,61 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'h2',
 	                            null,
-	                            'Who are our members? (With icons)'
+	                            'Who are our members?'
 	                        ),
 	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Filmmakers Musicians Artist Programmers Entrepreneurs Builders Changemakers '
+	                            'div',
+	                            { className: 'row' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
+	                                    'Filmmakers'
+	                                ),
+	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-video-camera' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
+	                                    'Musicians'
+	                                ),
+	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-music' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
+	                                    'Artists'
+	                                ),
+	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-paint-brush' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
+	                                    'Programmers'
+	                                ),
+	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-desktop' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
+	                                    'Entrepreneurs'
+	                                ),
+	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-rocket' })
+	                            )
 	                        ),
 	                        _react2.default.createElement(
 	                            'h2',
@@ -71112,7 +71161,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'SecondGen is an organization created and managed by students just like yourself. Whether you know what you\'re doing or not, SecondGen is the way to go. We believe that students of all backgrounds should have an opportunity to do what you love and turn that love from a hobby into a career or even your own business. With our programs you’ll foster new friends, gain opportunities, and grow as a person!'
+	                            'SecondGen is an organization created and managed by students just like you. Whether you know what you\'re doing or not, SecondGen is the way to go. We believe that students of all backgrounds should have an opportunity to do what they love and turn that passioin from a hobby into a career or even into a business venture. With our programs you’ll foster new friends, gain opportunities, and grow as a person!'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
@@ -71911,7 +71960,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 608 */
 /***/ function(module, exports) {
 
-	module.exports = "<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\">\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/img/logos/SG_square.png\">\n</head>\n\n<body>\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n    <script src=\"https://code.jquery.com/jquery-3.1.0.min.js\" integrity=\"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=\" crossorigin=\"anonymous\"></script>\n    <script type=\"text/javascript\" src=\"/typed.min.js\"></script>\n    <script>\n        $(function(){\n            $(\"#splash-typed\").typed({\n                strings: [\"students.\", \"hackers.\", \"artists.\", \"designers.\", \"film makers.\"],\n                typeSpeed: 30,\n                loop: true\n            });\n        });\n    </script>\n</body>\n";
+	module.exports = "<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\">\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/img/logos/SG_square.png\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css\">\n</head>\n\n<body>\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n    <script src=\"https://code.jquery.com/jquery-3.1.0.min.js\" integrity=\"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=\" crossorigin=\"anonymous\"></script>\n    <script type=\"text/javascript\" src=\"/typed.min.js\"></script>\n    <script>\n        $(function(){\n            $(\"#splash-typed\").typed({\n                strings: [\"students.\", \"hackers.\", \"artists.\", \"designers.\", \"film makers.\"],\n                typeSpeed: 30,\n                loop: true\n            });\n        });\n    </script>\n</body>\n";
 
 /***/ }
 /******/ ])
