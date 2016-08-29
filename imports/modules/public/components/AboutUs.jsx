@@ -32,17 +32,31 @@ export default class AboutUs extends React.Component {
                         <p> Each club meets bi-weekly for a two hour session. The structure varies club to club, but most meetings involve activities, a speaker, sharing of current projects, and finally work and collaboration time on projects for members. SecondGen Chapters & Individuals use our curriculum, events, network, competitions, and mentorship to learn new things, while they pursue their own project/business idea throughout the year. 
                         </p>
                         <img id="about-img" src="/img/team/team.jpeg" />
-                        <h2>Who are our members? (With icons)</h2>
-                        <p>Filmmakers
-                        Musicians
-                        Artist
-                        Programmers
-                        Entrepreneurs  
-                        Builders
-                        Changemakers </p>
-
+                        <h2>Who are our members?</h2>
+                        <div className="row">
+                            <div className="col-md-2 center-align col-sm-3" style={{padding: '1vw'}}>
+                              <div style={{fontSize: '1.1em', paddingBottom: 5, fontWeight: 400}}>Filmmakers</div>
+                              <i className="fa fa-4x fa-video-camera"></i>
+                            </div>
+                            <div className="col-md-2 center-align col-sm-3" style={{padding: '1vw'}}>
+                              <div style={{fontSize: '1.1em', paddingBottom: 5, fontWeight: 400}}>Musicians</div>
+                              <i className="fa fa-4x fa-music"></i>
+                            </div>
+                            <div className="col-md-2 center-align col-sm-3" style={{padding: '1vw'}}>
+                              <div style={{fontSize: '1.1em', paddingBottom: 5, fontWeight: 400}}>Artists</div>
+                              <i className="fa fa-4x fa-paint-brush"></i>
+                            </div>
+                            <div className="col-md-2 center-align col-sm-3" style={{padding: '1vw'}}>
+                              <div style={{fontSize: '1.1em', paddingBottom: 5, fontWeight: 400}}>Programmers</div>
+                              <i className="fa fa-4x fa-desktop"></i>
+                            </div>
+                            <div className="col-md-2 center-align col-sm-3" style={{padding: '1vw'}}>
+                              <div style={{fontSize: '1.1em', paddingBottom: 5, fontWeight: 400}}>Entrepreneurs</div>
+                              <i className="fa fa-4x fa-rocket"></i>
+                            </div>
+                        </div>
                         <h2>Why do students love SecondGen partnered Chapters?</h2>
-                        <p>SecondGen is an organization created and managed by students just like yourself. Whether you know what you're doing or not, SecondGen is the way to go. We believe that students of all backgrounds should have an opportunity to do what you love and turn that love from a hobby into a career or even your own business. With our programs you’ll foster new friends, gain opportunities, and grow as a person! 
+                        <p>SecondGen is an organization created and managed by students just like you. Whether you know what you're doing or not, SecondGen is the way to go. We believe that students of all backgrounds should have an opportunity to do what they love and turn that passioin from a hobby into a career or even into a business venture. With our programs you’ll foster new friends, gain opportunities, and grow as a person! 
                         </p><p>Want to expand SecondGen to your school? Check out our <Link to="/start-chapter">Start A Club Application</Link>, or if you already have a club, check out our <Link to="/partner">Partner Application</Link>.</p>
 
                     </Paper>
