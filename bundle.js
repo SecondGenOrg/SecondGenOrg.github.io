@@ -29923,26 +29923,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	                { className: 'wrapper', style: { position: 'relative' } },
 	                _react2.default.createElement(_Navbar2.default, {
 	                    id: 'navbar',
-	                    tabs: [
-	                    /*{
-	                        title: 'About', 
-	                    		color: Colors.blue900,
-	                    		items: [
-	                    				{
-	                    						text: 'Values',
-	                    						href: '#'
-	                    				}, {
-	                    						text: 'Team',
-	                    						href: '#'
-	                    				}, {
-	                    						text: 'FAQ',
-	                    						href: '#'
-	                    				}, {
-	                    						text: 'Contact Us',
-	                    						href: '#'
-	                    				}
-	                    		]
-	                    }, */{
+	                    tabs: [{
+	                        title: 'About',
+	                        color: Colors.blue900,
+	                        items: [{
+	                            text: 'About Us',
+	                            href: '/about-us'
+	                        } /*, {
+	                          	text: 'Team',
+	                          	href: '#'
+	                          }*/, {
+	                            text: 'FAQ',
+	                            href: '/faq'
+	                        } /*, {
+	                          	text: 'Contact Us',
+	                          	href: '#'
+	                          }*/
+	                        ]
+	                    }, {
 	                        title: 'Programs',
 	                        color: Colors.green900,
 	                        items: [{
