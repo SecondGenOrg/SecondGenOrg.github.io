@@ -8,25 +8,25 @@ export default class Nav extends React.Component {
                 <Navbar 
                     id="navbar"
                     tabs={[
-                        /*{
+                        {
                             title: 'About', 
                         		color: Colors.blue900,
                         		items: [
                         				{
-                        						text: 'Values',
-                        						href: '#'
-                        				}, {
+                        						text: 'About Us',
+                        						href: '/about-us'
+                        				}/*, {
                         						text: 'Team',
                         						href: '#'
-                        				}, {
+                        				}*/, {
                         						text: 'FAQ',
-                        						href: '#'
-                        				}, {
+                        						href: '/faq'
+                        				}/*, {
                         						text: 'Contact Us',
                         						href: '#'
-                        				}
+                        				}*/
                         		]
-                        }, */{
+                        }, {
                             title: 'Programs', 
                         		color: Colors.green900,
                         		items: [
