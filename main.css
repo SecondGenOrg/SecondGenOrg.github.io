@@ -137,7 +137,8 @@ img.bw {
   pointer-events: auto;
   background-image: url(/img/assets/dallas.png);
   background-position: center;
-  position: fixed;
+  background-attachment: fixed;
+  position: relative;
   height: 75vh;
   width: 100vw;
   background-size: cover;
@@ -191,7 +192,6 @@ section {
   z-index: 1;
 }
 #section-what-we-do {
-  margin-top: 75vh;
   z-index: 2
 }
 
@@ -204,9 +204,6 @@ section {
     height: 100%;
     width: 95%;
     margin: auto;
-  }
-  #section-what-we-do {
-    margin-top: 100vh;
   }
   #home-wrapper #section-splash h2 {
     color: white;
