@@ -54440,18 +54440,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            _react2.default.createElement(
 	                                'h2',
 	                                null,
-	                                'We are an entrepreneurship club for ',
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        'span',
-	                                        { style: {
-	                                                fontWeight: 700
-	                                            }, id: 'splash-typed' },
-	                                        'students.'
-	                                    )
-	                                )
+	                                'Uniting Students To Create The Next Big Thing'
 	                            ),
 	                            _react2.default.createElement(
 	                                _reactRouter.Link,
