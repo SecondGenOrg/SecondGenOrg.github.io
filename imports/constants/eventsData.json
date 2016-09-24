@@ -1,16 +1,6 @@
 {
   "events": [
     {
-      "name": "EagleHacks 2",
-      "date": "November",
-      "imgSrc": "/img/events/eaglehacks3.png",
-      "url": "http://www.eaglehacks.com",
-      "tags": [
-        "Tech",
-        "Hackathon"
-      ]
-    },
-    {
       "name": "Local Hack Day",
       "date": "December 3, 2016",
       "imgSrc": "https://mrtower.files.wordpress.com/2015/09/local-hack-day.png",
@@ -48,9 +38,9 @@
       ]
     },
     {
-      "name": "EagleHacks 3",
-      "date": "April 2017",
-      "imgSrc": "/img/events/eaglehacks3.png",
+      "name": "EagleHacks 2",
+      "date": "April 1-2, 2017",
+      "imgSrc": "/img/events/eaglehacks2.png",
       "url": "http://www.eaglehacks.com",
       "tags": [
         "Tech",
@@ -62,7 +52,7 @@
   {
     "name": "IncubateX",
     "date": "August 6-7, 2016",
-    "imgSrc": "https://avatars3.githubusercontent.com/u/18596616?v=3&s=200",
+    "imgSrc": "/img/events/incubatex.jpg",
     "url": "http://incubatex.org",
     "tags": [
       "Business",
@@ -117,7 +107,7 @@
     ]
   },
   {
-    "name": "SecondGen Summer Confrence",
+    "name": "SecondGen Summer Conference",
     "date": "June 9, 2015",
     "imgSrc": "http://secondgen.org/img/logos/SG.png",
     "url": "http://secondgen.org",

@@ -70,7 +70,7 @@ export default class Home extends React.Component {
                         </a>
                         <a className="col-md-3 what-we-do-panel">
                             <div className="img-wrapper">
-                                <img src="/img/assets/canhacks.jpg"/>
+                                <img src="/img/assets/canhacks.png"/>
                             </div>
                             <h3>Mentors</h3>
                             <p>Members have access to an array of mentors to ask questions about very specific and experience related questions to guide students into the right path when it comes to entrepreneurship.</p>

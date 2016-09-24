@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar.jsx';
+import Footer from './Footer.jsx';
 import * as Colors from 'material-ui/styles/colors.js';
 export default class Nav extends React.Component {
     render() {
@@ -82,6 +83,7 @@ export default class Nav extends React.Component {
                 />
                 <div className="spacer" style={{height: '5vh'}}/>
                 {this.props.children}
+                <Footer />
             </div>
         );
     }
