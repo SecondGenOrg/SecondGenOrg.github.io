@@ -103,7 +103,7 @@ git checkout dev
     }];
     ```
 5. If needed, add code to the `initialize` function.
-6. Add the route to the `paths` array in webpack.config.js
+6. Add the route to the `paths` array in webpack.config.js. This tells webpack to create an empty HTML page with a React node at that route so it can be served statically from GitHub pages
 7. Your new page should appear at `/page_route`!
 
 ### Adding Reducers
