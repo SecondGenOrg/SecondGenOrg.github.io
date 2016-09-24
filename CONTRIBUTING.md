@@ -9,6 +9,29 @@ Try to follow these as much as possible:
 * [Airbnb's React Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 * [Material UI Docs](http://www.material-ui.com/#/components/app-bar)
 
+### Making and publishing changes
+
+* NEVER commit directly to master
+
+#### If your changes involve editing ANY jsx code
+
+1. Install `webpack` and `webpack-dev-server` globally
+2. When you want to make a change, run `npm start` to start the dev server locally. It watches for changes in and compiles React code and serves the site on localhost:8080
+3. Only work on branch `dev` (you should have both branches locally);
+4. When you are ready to commit, commit and push to the remote dev branch (`git push origin dev`)
+5. To publish live, consult with Avik first. Then run `npm run publish`. This runs a script to compile React code and output files for each route so it can be published on GitHub. After pushing the changes, the script will automatically checkout back to the development branch. 
+
+#### else (you only changed assets like images, css)
+
+1. Commit when ready
+2. Run the following commands
+```
+git push origin dev
+git checkout master
+git merge dev 
+git push origin master
+git checkout dev
+```
 
 ### Adding a Module
 
