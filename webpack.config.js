@@ -3,7 +3,7 @@ var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 var paths = ['/home', '/events', '/chapters', 
     '/start-chapter', '/become-mentor', '/join-team', 
     '/partner', '/mentors', '/videos', 
-    '/student-pack', '/curriculum', '/camps',
+    '/student-pack', '/curriculum', '/competitions',
     '/faq', '/team', '/partners', '/about-us'];
 
 module.exports = {
