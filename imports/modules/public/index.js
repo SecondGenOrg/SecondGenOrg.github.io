@@ -9,7 +9,7 @@ import Mentors from './components/Mentors.jsx';
 import Videos from './components/Videos.jsx';
 import StudentPack from './components/StudentPack.jsx';
 import Curriculum from './components/Curriculum.jsx';
-import Camps from './components/Camps.jsx';
+import Competitions from './components/Competitions.jsx';
 import FAQ from './components/FAQ.jsx';
 import Team from './components/Team.jsx';
 import Partners from './components/Partners.jsx';
@@ -26,7 +26,7 @@ export { Mentors as Mentors };
 export { Videos as Videos };
 export { StudentPack as StudentPack };
 export { Curriculum as Curriculum };
-export { Camps as Camps };
+export { Competitions as Competitions };
 export { FAQ as FAQ };
 export { Team as Team };
 export { Partners as Partners };
@@ -70,8 +70,8 @@ export const routes = [
 		path: 'curriculum',
 		component: Curriculum
 	}, {
-		path: 'camps',
-		component: Camps
+		path: 'competitions',
+		component: Competitions
 	}, {
 		path: 'faq',
 		component: FAQ
