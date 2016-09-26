@@ -56,9 +56,9 @@ class Navbar extends React.Component {
                                 id="nav-logo-wrapper"
                                 style={{
                                         position: 'absolute',
-                                        left: 0,
-                                        top: 0, 
-                                        bottom: 0,
+                                        left: '1.5vh',
+                                        top: '1.5vh', 
+                                        bottom: '1.5vh',
                                         width: 'auto',
                                         paddingLeft: window.innerWidth > 600 ? 10 : 0
                                 }}

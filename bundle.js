@@ -29954,8 +29954,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            text: 'Events',
 	                            href: '/events'
 	                        }, {
-	                            text: 'Camps',
-	                            href: '/camps'
+	                            text: 'Competitions',
+	                            href: '/competitions'
 	                        }]
 	                    }, {
 	                        title: 'Resources',
@@ -30112,9 +30112,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            id: 'nav-logo-wrapper',
 	                            style: {
 	                                position: 'absolute',
-	                                left: 0,
-	                                top: 0,
-	                                bottom: 0,
+	                                left: '1.5vh',
+	                                top: '1.5vh',
+	                                bottom: '1.5vh',
 	                                width: 'auto',
 	                                paddingLeft: window.innerWidth > 600 ? 10 : 0
 	                            }
@@ -54264,7 +54264,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.routes = exports.AboutUs = exports.Partners = exports.Team = exports.FAQ = exports.Camps = exports.Curriculum = exports.StudentPack = exports.Videos = exports.Mentors = exports.Partner = exports.JoinTeam = exports.BecomeMentor = exports.StartChapter = exports.Chapters = exports.Events = exports.Home = undefined;
+	exports.routes = exports.AboutUs = exports.Partners = exports.Team = exports.FAQ = exports.Competitions = exports.Curriculum = exports.StudentPack = exports.Videos = exports.Mentors = exports.Partner = exports.JoinTeam = exports.BecomeMentor = exports.StartChapter = exports.Chapters = exports.Events = exports.Home = undefined;
 	exports.initialize = initialize;
 
 	var _Home = __webpack_require__(446);
@@ -54311,9 +54311,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Curriculum2 = _interopRequireDefault(_Curriculum);
 
-	var _Camps = __webpack_require__(594);
+	var _Competitions = __webpack_require__(594);
 
-	var _Camps2 = _interopRequireDefault(_Camps);
+	var _Competitions2 = _interopRequireDefault(_Competitions);
 
 	var _FAQ = __webpack_require__(595);
 
@@ -54344,7 +54344,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.Videos = _Videos2.default;
 	exports.StudentPack = _StudentPack2.default;
 	exports.Curriculum = _Curriculum2.default;
-	exports.Camps = _Camps2.default;
+	exports.Competitions = _Competitions2.default;
 	exports.FAQ = _FAQ2.default;
 	exports.Team = _Team2.default;
 	exports.Partners = _Partners2.default;
@@ -54385,8 +54385,8 @@ return /******/ (function(modules) { // webpackBootstrap
 		path: 'curriculum',
 		component: _Curriculum2.default
 	}, {
-		path: 'camps',
-		component: _Camps2.default
+		path: 'competitions',
+		component: _Competitions2.default
 	}, {
 		path: 'faq',
 		component: _FAQ2.default
@@ -70579,13 +70579,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Camps = function (_React$Component) {
-	    _inherits(Camps, _React$Component);
+	var Competitions = function (_React$Component) {
+	    _inherits(Competitions, _React$Component);
 
-	    function Camps() {
-	        _classCallCheck(this, Camps);
+	    function Competitions() {
+	        _classCallCheck(this, Competitions);
 
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Camps).call(this));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Competitions).call(this));
 
 	        var styles = {
 	            sectionHeader: {
@@ -70598,14 +70598,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return _this;
 	    }
 
-	    _createClass(Camps, [{
+	    _createClass(Competitions, [{
 	        key: 'render',
 	        value: function render() {
 	            var styles = this.state.styles;
 
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'page-wrapper camps-wrapper' },
+	                { className: 'page-wrapper competitions-wrapper' },
 	                _react2.default.createElement('div', { style: { height: '5vh' } }),
 	                _react2.default.createElement(
 	                    'section',
@@ -70616,7 +70616,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'h1',
 	                            null,
-	                            'Camps'
+	                            'Competitions'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
@@ -70634,10 +70634,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	    }]);
 
-	    return Camps;
+	    return Competitions;
 	}(_react2.default.Component);
 
-	exports.default = Camps;
+	exports.default = Competitions;
 
 /***/ },
 /* 595 */
