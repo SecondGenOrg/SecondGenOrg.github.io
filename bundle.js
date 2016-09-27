@@ -71120,66 +71120,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            null,
 	                            ' Each club meets bi-weekly for a two hour session. The structure varies club to club, but most meetings involve activities, a speaker, sharing of current projects, and finally work and collaboration time on projects for members. SecondGen Chapters & Individuals use our curriculum, events, network, competitions, and mentorship to learn new things, while they pursue their own project/business idea throughout the year.'
 	                        ),
-	                        _react2.default.createElement('img', { id: 'about-img', src: '/img/team/team.jpeg' }),
-	                        _react2.default.createElement(
-	                            'h2',
-	                            null,
-	                            'Who are our members?'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'row' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
-	                                    'Filmmakers'
-	                                ),
-	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-video-camera' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
-	                                    'Musicians'
-	                                ),
-	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-music' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
-	                                    'Artists'
-	                                ),
-	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-paint-brush' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
-	                                    'Programmers'
-	                                ),
-	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-desktop' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'col-md-2 center-align col-sm-3', style: { padding: '1vw' } },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { style: { fontSize: '1.1em', paddingBottom: 5, fontWeight: 400 } },
-	                                    'Entrepreneurs'
-	                                ),
-	                                _react2.default.createElement('i', { className: 'fa fa-4x fa-rocket' })
-	                            )
-	                        ),
 	                        _react2.default.createElement(
 	                            'h2',
 	                            null,
