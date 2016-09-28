@@ -29954,8 +29954,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            text: 'Events',
 	                            href: '/events'
 	                        }, {
-	                            text: 'Competitions',
-	                            href: '/competitions'
+	                            text: 'Contests',
+	                            href: '/contests'
 	                        }]
 	                    }, {
 	                        title: 'Resources',
@@ -54264,7 +54264,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.routes = exports.AboutUs = exports.Partners = exports.Team = exports.FAQ = exports.Competitions = exports.Curriculum = exports.StudentPack = exports.Videos = exports.Mentors = exports.Partner = exports.JoinTeam = exports.BecomeMentor = exports.StartChapter = exports.Chapters = exports.Events = exports.Home = undefined;
+	exports.routes = exports.AboutUs = exports.Partners = exports.Team = exports.FAQ = exports.Contests = exports.Curriculum = exports.StudentPack = exports.Videos = exports.Mentors = exports.Partner = exports.JoinTeam = exports.BecomeMentor = exports.StartChapter = exports.Chapters = exports.Events = exports.Home = undefined;
 	exports.initialize = initialize;
 
 	var _Home = __webpack_require__(446);
@@ -54311,9 +54311,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Curriculum2 = _interopRequireDefault(_Curriculum);
 
-	var _Competitions = __webpack_require__(594);
+	var _Contests = __webpack_require__(594);
 
-	var _Competitions2 = _interopRequireDefault(_Competitions);
+	var _Contests2 = _interopRequireDefault(_Contests);
 
 	var _FAQ = __webpack_require__(595);
 
@@ -54344,7 +54344,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.Videos = _Videos2.default;
 	exports.StudentPack = _StudentPack2.default;
 	exports.Curriculum = _Curriculum2.default;
-	exports.Competitions = _Competitions2.default;
+	exports.Contests = _Contests2.default;
 	exports.FAQ = _FAQ2.default;
 	exports.Team = _Team2.default;
 	exports.Partners = _Partners2.default;
@@ -54385,8 +54385,8 @@ return /******/ (function(modules) { // webpackBootstrap
 		path: 'curriculum',
 		component: _Curriculum2.default
 	}, {
-		path: 'competitions',
-		component: _Competitions2.default
+		path: 'contests',
+		component: _Contests2.default
 	}, {
 		path: 'faq',
 		component: _FAQ2.default
@@ -70579,13 +70579,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Competitions = function (_React$Component) {
-	    _inherits(Competitions, _React$Component);
+	var Contests = function (_React$Component) {
+	    _inherits(Contests, _React$Component);
 
-	    function Competitions() {
-	        _classCallCheck(this, Competitions);
+	    function Contests() {
+	        _classCallCheck(this, Contests);
 
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Competitions).call(this));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Contests).call(this));
 
 	        var styles = {
 	            sectionHeader: {
@@ -70598,14 +70598,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return _this;
 	    }
 
-	    _createClass(Competitions, [{
+	    _createClass(Contests, [{
 	        key: 'render',
 	        value: function render() {
 	            var styles = this.state.styles;
 
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'page-wrapper competitions-wrapper' },
+	                { className: 'page-wrapper contests-wrapper' },
 	                _react2.default.createElement('div', { style: { height: '5vh' } }),
 	                _react2.default.createElement(
 	                    'section',
@@ -70616,7 +70616,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'h1',
 	                            null,
-	                            'Competitions'
+	                            'Contests'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
@@ -70634,10 +70634,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	    }]);
 
-	    return Competitions;
+	    return Contests;
 	}(_react2.default.Component);
 
-	exports.default = Competitions;
+	exports.default = Contests;
 
 /***/ },
 /* 595 */
