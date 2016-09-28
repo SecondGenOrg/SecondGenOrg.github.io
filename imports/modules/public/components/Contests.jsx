@@ -2,7 +2,7 @@ import React from 'react';
 import Paper from 'material-ui/Paper';
 import * as Colors from 'material-ui/styles/colors';
 
-export default class Competitions extends React.Component {
+export default class Contests extends React.Component {
 		constructor() {
 			super();
 			const styles = {
@@ -17,11 +17,11 @@ export default class Competitions extends React.Component {
     render() {
     		const { styles } = this.state;
         return (
-            <div className="page-wrapper competitions-wrapper">
+            <div className="page-wrapper contests-wrapper">
            		  <div style={{ height: '5vh' }} />
                 <section className="header-wrapper valign-wrapper" style={ styles.sectionHeader }> 
                     <div className="header-text valign">
-                        <h1>Competitions</h1> 
+                        <h1>Contests</h1> 
                         <p>Coming Summer 2017.</p>
                     </div>
                 </section>

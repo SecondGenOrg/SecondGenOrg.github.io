@@ -38,8 +38,8 @@ export default class Nav extends React.Component {
                         						text: 'Events',
                         						href: '/events'
                         				}, {
-                        						text: 'Competitions',
-                        						href: '/competitions'
+                        						text: 'Contests',
+                        						href: '/contests'
                         				}
                         		]
                         }, {
