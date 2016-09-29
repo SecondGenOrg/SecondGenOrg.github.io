@@ -90,7 +90,9 @@ export default class JoinTeam extends React.Component {
     render() {
     		const { styles } = this.state;
         return (
-            <div className="page-wrapper get-involved-wrapper">
+        	<div>
+        		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScboB1nP4E5TjdJJWfFkhCn-01vCHnmrU6hCyvsFRqTGvmzvQ/viewform?embedded=true" style={{width: '100%', height: '100%'}} frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            {/*<div className="page-wrapper get-involved-wrapper">
                 <section className="header-wrapper valign-wrapper" style={ styles.sectionHeader }> 
                     <div className="header-text valign">
                         <h1>Join Our Team</h1>
@@ -341,6 +343,7 @@ export default class JoinTeam extends React.Component {
                     </Paper>
                     <Paper id="cover" zDepth={5}/>
                 </div>
+            </div>*/}
             </div>
         );
     }
