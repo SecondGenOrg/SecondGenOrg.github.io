@@ -12,6 +12,10 @@ export default class EventCard extends React.Component {
                 margin: '2px',
                 marginBottom: 0,
                 fontSize: '0.5em'
+            },
+            overlayStyle: {
+                padding: 0,
+                color: 'red'
             }
         }
         this.state = { styles };
@@ -29,10 +33,12 @@ export default class EventCard extends React.Component {
         });
         return(
             <Card zDepth={3}>
-                <CardMedia overlay={
+                <CardMedia 
+                    overlay={
                         <CardTitle title={this.props.name} subtitle={this.props.date} />
-                    }>
-                    <img className={this.props.pastEvent ? 'card-img bw' : 'card-img'} src={this.props.imgSrc} />
+                    }
+                    overlayStyle={styles.overlayStyle}>
+                    <img className='card-img' src={this.props.imgSrc} />
                 </CardMedia>
                 <CardText>
                     {tagChips}
