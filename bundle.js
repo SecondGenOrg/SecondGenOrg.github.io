@@ -70594,7 +70594,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            ' SecondGen is an entrepreneurial organization for artists, programmers, film-makers, musicians,  journalists, and business-minded youth. It are a resource for students to learn how to develop their hobbies and talents into business opportunities and careers. Through SecondGen’s 120 chapters worldwide, mentorship program, chapter resources, and events, students are able to develop an understanding of new and familiar industries and technologies and simultaneously hone their entrepreneurial skills.'
+	                            ' SecondGen is an entrepreneurial organization for artists, programmers, film-makers, musicians,  journalists, and business-minded youth. It helps students develop their hobbies and talents into business opportunities and careers. Through SecondGen’s 120 chapters worldwide, mentorship program, chapter resources, and events, students are able to develop an understanding of new and familiar industries and technologies and simultaneously hone their entrepreneurial skills.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'h2',
