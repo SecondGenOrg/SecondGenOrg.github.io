@@ -54672,7 +54672,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            ),
 	                            _react2.default.createElement(
 	                                _reactRouter.Link,
-	                                { to: '/start-chapter', style: {
+	                                { to: '/partner', style: {
 	                                        width: '50%'
 	                                    } },
 	                                _react2.default.createElement(_RaisedButton2.default, {
@@ -54703,7 +54703,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            ),
 	                            _react2.default.createElement(
 	                                _reactRouter.Link,
-	                                { to: '/start-chapter', style: {
+	                                { to: '/join-team', style: {
 	                                        width: '50%'
 	                                    } },
 	                                _react2.default.createElement(_RaisedButton2.default, {
