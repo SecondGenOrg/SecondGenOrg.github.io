@@ -27,9 +27,9 @@ export default class Home extends React.Component {
                             display: 'block'
                         }}>
                             <h1>SecondGen</h1>
-                            <h2>Uniting Students To Create The Next Big Thing{/* We are an entrepreneurship club for <div><span style={{
+                            <h2>We are an entrepreneurship club for <div><span style={{
                                 fontWeight: 700
-                            }} id="splash-typed" >students.</span></div>*/}</h2>
+                            }} id="splash-typed" >students.</span></div></h2>
                             <Link to="/start-chapter" style={{
                                 marginTop: '6vh',
                                 display: 'block',
