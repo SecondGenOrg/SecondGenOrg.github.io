@@ -29979,10 +29979,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        items: [{
 	                            text: 'Start a Chapter',
 	                            href: '/start-chapter'
-	                        }, {
-	                            text: 'Become a Mentor',
-	                            href: '/become-mentor'
-	                        }, {
+	                        }, /*{
+	                           text: 'Become a Mentor',
+	                           href: '/become-mentor'
+	                           }, */{
 	                            text: 'Join Our Team',
 	                            href: '/join-team'
 	                        }, {
@@ -54606,6 +54606,112 @@ return /******/ (function(modules) { // webpackBootstrap
 	                ),
 	                _react2.default.createElement(
 	                    'section',
+	                    { id: 'section-get-involved', 'class': 'content-section' },
+	                    _react2.default.createElement(
+	                        'h1',
+	                        { id: 'get-involved-header', className: 'section-header' },
+	                        'Get Involved'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-xs-12 col-sm-4' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                null,
+	                                'Start a Chapter'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'SecondGen chapters can be new clubs or can be integrated into existing clubs. If you believe we can make a difference in your community, we encourage you to start a local chapter.'
+	                            ),
+	                            _react2.default.createElement(
+	                                _reactRouter.Link,
+	                                { to: '/start-chapter', style: {
+	                                        width: '50%'
+	                                    } },
+	                                _react2.default.createElement(_RaisedButton2.default, {
+	                                    label: 'Start a Chapter!',
+	                                    backgroundColor: Colors.blue500,
+	                                    labelStyle: {
+	                                        color: 'white'
+	                                    },
+	                                    style: {
+	                                        display: 'block',
+	                                        marginTop: '20px'
+	                                    }
+	                                })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-xs-12 col-sm-4' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                null,
+	                                'Partner'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Are you a big company, investor or curious supporter? Fill out this form for any inquiries on other ways to get involved with SecondGen.'
+	                            ),
+	                            _react2.default.createElement(
+	                                _reactRouter.Link,
+	                                { to: '/start-chapter', style: {
+	                                        width: '50%'
+	                                    } },
+	                                _react2.default.createElement(_RaisedButton2.default, {
+	                                    label: 'Contact Us!',
+	                                    backgroundColor: Colors.blue500,
+	                                    labelStyle: {
+	                                        color: 'white'
+	                                    },
+	                                    style: {
+	                                        display: 'block',
+	                                        marginTop: '20px'
+	                                    }
+	                                })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-xs-12 col-sm-4' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                null,
+	                                'Join Our Team'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'SecondGen is always looking for amazing students to help contribute to our community from local chapter leaders to global directors. Fill out this form to get involved today!'
+	                            ),
+	                            _react2.default.createElement(
+	                                _reactRouter.Link,
+	                                { to: '/start-chapter', style: {
+	                                        width: '50%'
+	                                    } },
+	                                _react2.default.createElement(_RaisedButton2.default, {
+	                                    label: 'Join Us!',
+	                                    backgroundColor: Colors.blue500,
+	                                    labelStyle: {
+	                                        color: 'white'
+	                                    },
+	                                    style: {
+	                                        display: 'block',
+	                                        marginTop: '20px'
+	                                    }
+	                                })
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'section',
 	                    { id: 'section-partners', className: 'content-section' },
 	                    _react2.default.createElement(
 	                        'h1',
@@ -59200,6 +59306,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	                margin: '2px',
 	                marginBottom: 0,
 	                fontSize: '0.5em'
+	            },
+	            overlayStyle: {
+	                padding: 0,
+	                color: 'red'
 	            }
 	        };
 	        _this.state = { styles: styles };
@@ -59226,8 +59336,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	                { zDepth: 3 },
 	                _react2.default.createElement(
 	                    _Card.CardMedia,
-	                    { overlay: _react2.default.createElement(_Card.CardTitle, { title: this.props.name, subtitle: this.props.date }) },
-	                    _react2.default.createElement('img', { className: this.props.pastEvent ? 'card-img bw' : 'card-img', src: this.props.imgSrc })
+	                    {
+	                        overlay: _react2.default.createElement(_Card.CardTitle, { title: this.props.name, subtitle: this.props.date }),
+	                        overlayStyle: styles.overlayStyle },
+	                    _react2.default.createElement('img', { className: 'card-img', src: this.props.imgSrc })
 	                ),
 	                _react2.default.createElement(
 	                    _Card.CardText,
@@ -62186,7 +62298,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "Local Hack Day",
 				"date": "December 3, 2016",
-				"imgSrc": "https://mrtower.files.wordpress.com/2015/09/local-hack-day.png",
+				"imgSrc": "/img/events/localhackday.png",
 				"url": "https://localhackday.mlh.io",
 				"tags": [
 					"Tech",
@@ -62196,7 +62308,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "Suburbia Film Festival",
 				"date": "January 2017",
-				"imgSrc": "http://www.thecitydrivegroup.com/portals/5/Images/film%20roll.jpg",
+				"imgSrc": "/img/events/suburbiafilm.png",
 				"url": "http://www.suburbiafilm.com",
 				"tags": [
 					"Film",
@@ -62206,6 +62318,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "Tech Women's Conference",
 				"date": "February 2017",
+				"imgSrc": "/img/events/womenstech.png",
 				"tags": [
 					"Entrepreneurship",
 					"Tech"
@@ -62214,7 +62327,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "TEDx",
 				"date": "March 2017",
-				"imgSrc": "http://www.reelnreel.com/wp-content/uploads/2014/07/TEDx_logo1.jpg",
+				"imgSrc": "/img/events/ted.png",
 				"url": "www.tedxallen.com",
 				"tags": [
 					"General"
@@ -62235,7 +62348,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "IncubateX",
 				"date": "August 6-7, 2016",
-				"imgSrc": "/img/events/incubatex.jpg",
+				"imgSrc": "/img/events/incubatex.png",
 				"url": "http://incubatex.org",
 				"tags": [
 					"Business",
@@ -62245,7 +62358,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "TopGolf Social",
 				"date": "May 13, 2016",
-				"imgSrc": "http://agencythreesixty.com/wp-content/uploads/2011/08/TopGolf-featured-image.gif",
+				"imgSrc": "/img/events/topgolf.png",
 				"url": "https://www.eventbrite.com/e/topgolf-social-for-student-leaders-creators-tickets-25188128370#",
 				"tags": [
 					"General"
@@ -62254,7 +62367,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "EagleHacks",
 				"date": "April 2, 2016",
-				"imgSrc": "http://www.eaglehacks.com/index_files/EagleHacks%20Pictures/Long%20Logo.png",
+				"imgSrc": "/img/events/eaglehacks.png",
 				"url": "http://www.eaglehacks.com",
 				"tags": [
 					"Tech",
@@ -62264,7 +62377,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "Local Hack Day",
 				"date": "October 9, 2015",
-				"imgSrc": "https://mrtower.files.wordpress.com/2015/09/local-hack-day.png",
+				"imgSrc": "/img/events/localhackday.png",
 				"url": "https://localhackday.mlh.io",
 				"tags": [
 					"Tech",
@@ -62292,7 +62405,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			{
 				"name": "SecondGen Summer Conference",
 				"date": "June 9, 2015",
-				"imgSrc": "http://secondgen.org/img/logos/SG.png",
+				"imgSrc": "/img/events/sgsc.png",
 				"url": "http://secondgen.org",
 				"tags": [
 					"General"
@@ -67440,286 +67553,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 							return _react2.default.createElement(
 									'div',
-									{ className: 'page-wrapper get-involved-wrapper' },
+									null,
 									_react2.default.createElement(
-											'section',
-											{ className: 'header-wrapper valign-wrapper', style: styles.sectionHeader },
-											_react2.default.createElement(
-													'div',
-													{ className: 'header-text valign' },
-													_react2.default.createElement(
-															'h1',
-															null,
-															'Start a Chapter'
-													),
-													_react2.default.createElement(
-															'p',
-															null,
-															'Want to start a SecondGen chapter at your school?'
-													)
-											)
-									),
-									_react2.default.createElement(
-											'div',
-											{ className: 'content-wrapper' },
-											_react2.default.createElement(
-													_Paper2.default,
-													{ zDepth: 3, id: 'form-wrapper' },
-													_react2.default.createElement(
-															'form',
-															{ onSubmit: this.handleFormSubmit.bind(this) },
-															_react2.default.createElement(
-																	'p',
-																	null,
-																	'Get started by filling out this form.'
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'first_name_input',
-																					name: 'first_name',
-																					floatingLabelText: 'First Name *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'last_name_input',
-																					name: 'last_name',
-																					floatingLabelText: 'Last Name *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'email_input',
-																					name: 'email',
-																					floatingLabelText: 'Email Address *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'institution_input',
-																					name: 'institution',
-																					floatingLabelText: 'School or Organization *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'grad_year_input',
-																					name: 'grad_year',
-																					floatingLabelText: 'Graduation Year *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'linkedin_input',
-																					name: 'linkedin',
-																					floatingLabelText: 'LinkedIn',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'resume_input',
-																					name: 'resume',
-																					floatingLabelText: 'Resume URL',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'facebook_input',
-																					name: 'facebook',
-																					floatingLabelText: 'Facebook',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'twitter_input',
-																					name: 'twitter',
-																					floatingLabelText: 'Twitter',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'startup_input',
-																					name: 'startup',
-																					floatingLabelText: 'Please tell us about an interesting startup that you created or worked on.',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle,
-																					multiLine: true,
-																					rows: 5
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'club_input',
-																					name: 'club',
-																					floatingLabelText: 'Do you plan to incorporate SecondGen into an existing club? If not, what steps have you taken to start your club?',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle,
-																					multiLine: true,
-																					rows: 5
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'how_input',
-																					name: 'how',
-																					floatingLabelText: 'How did you learn about SecondGen?',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle,
-																					multiLine: true,
-																					rows: 2
-																			})
-																	)
-															),
-															_react2.default.createElement(_FlatButton2.default, {
-																	type: 'submit',
-																	label: 'Submit',
-																	backgroundColor: Colors.teal500,
-																	hoverColor: Colors.teal400,
-																	disabled: this.state.buttonDisabled,
-																	labelStyle: {
-																			color: 'white'
-																	},
-																	style: {
-																			marginTop: '5vh',
-																			width: '100%',
-																			height: '6vh'
-																	},
-																	rippleColor: 'white'
-															}),
-															_react2.default.createElement(
-																	'p',
-																	{ style: {
-																					color: Colors.red500,
-																					fontSize: '1em',
-																					opacity: this.state.errorMessage ? 1 : 0,
-																					transition: 'opacity ease 0.25s'
-																			} },
-																	'Please fill out all required fields.'
-															)
-													)
-											),
-											_react2.default.createElement(_Paper2.default, { id: 'cover', zDepth: 5 })
+											'iframe',
+											{ src: 'https://docs.google.com/forms/d/e/1FAIpQLScukaIvpgY9jsVO93x1xsC3tVs-vqcEVq-sG7uIx7zw-u5KaA/viewform?embedded=true', style: { width: '100%', height: '100%' }, frameborder: '0', marginheight: '0', marginwidth: '0' },
+											'Loading...'
 									)
 							);
 					}
@@ -69551,328 +69389,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 							return _react2.default.createElement(
 									'div',
-									{ className: 'page-wrapper get-involved-wrapper' },
+									null,
 									_react2.default.createElement(
-											'section',
-											{ className: 'header-wrapper valign-wrapper', style: styles.sectionHeader },
-											_react2.default.createElement(
-													'div',
-													{ className: 'header-text valign' },
-													_react2.default.createElement(
-															'h1',
-															null,
-															'Join Our Team'
-													),
-													_react2.default.createElement(
-															'p',
-															null,
-															'Want to be a part of the SecondGen team?'
-													)
-											)
-									),
-									_react2.default.createElement(
-											'div',
-											{ className: 'content-wrapper' },
-											_react2.default.createElement(
-													_Paper2.default,
-													{ zDepth: 3, id: 'form-wrapper' },
-													_react2.default.createElement(
-															'form',
-															{ onSubmit: this.handleFormSubmit.bind(this) },
-															_react2.default.createElement(
-																	'p',
-																	null,
-																	'Get started by filling out this form.'
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'first_name_input',
-																					name: 'first_name',
-																					floatingLabelText: 'First Name *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'last_name_input',
-																					name: 'last_name',
-																					floatingLabelText: 'Last Name *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'email_input',
-																					name: 'email',
-																					floatingLabelText: 'Email Address *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'institution_input',
-																					name: 'institution',
-																					floatingLabelText: 'School or Organization *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'grad_year_input',
-																					name: 'grad_year',
-																					floatingLabelText: 'Graduation Year *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'linkedin_input',
-																					name: 'linkedin',
-																					floatingLabelText: 'LinkedIn',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'resume_input',
-																					name: 'resume',
-																					floatingLabelText: 'Resume URL',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'facebook_input',
-																					name: 'facebook',
-																					floatingLabelText: 'Facebook',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'twitter_input',
-																					name: 'twitter',
-																					floatingLabelText: 'Twitter',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'passion_input',
-																					name: 'passion',
-																					floatingLabelText: 'What are you most passionate about? *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle,
-																					multiLine: true,
-																					rows: 4
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'skills_input',
-																					name: 'skills',
-																					floatingLabelText: 'If you were accepted into the team, what practical skills would you provide? *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle,
-																					multiLine: true,
-																					rows: 4
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'difference_input',
-																					name: 'difference',
-																					floatingLabelText: 'What makes you different? *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle,
-																					multiLine: true,
-																					rows: 4
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'failure_input',
-																					name: 'failure',
-																					floatingLabelText: 'Describe a time you failed and how you dealt with the problem. *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle,
-																					multiLine: true,
-																					rows: 4
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'how_input',
-																					name: 'how',
-																					floatingLabelText: 'How did you hear about us? *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle,
-																					multiLine: true,
-																					rows: 4
-																			})
-																	)
-															),
-															_react2.default.createElement(_FlatButton2.default, {
-																	type: 'submit',
-																	label: 'Submit',
-																	backgroundColor: Colors.teal500,
-																	hoverColor: Colors.teal400,
-																	disabled: this.state.buttonDisabled,
-																	labelStyle: {
-																			color: 'white'
-																	},
-																	style: {
-																			marginTop: '5vh',
-																			width: '100%',
-																			height: '6vh'
-																	},
-																	rippleColor: 'white'
-															}),
-															_react2.default.createElement(
-																	'p',
-																	{ style: {
-																					color: Colors.red500,
-																					fontSize: '1em',
-																					opacity: this.state.errorMessage ? 1 : 0,
-																					transition: 'opacity ease 0.25s'
-																			} },
-																	'Please fill out all required fields.'
-															)
-													)
-											),
-											_react2.default.createElement(_Paper2.default, { id: 'cover', zDepth: 5 })
+											'iframe',
+											{ src: 'https://docs.google.com/forms/d/e/1FAIpQLScboB1nP4E5TjdJJWfFkhCn-01vCHnmrU6hCyvsFRqTGvmzvQ/viewform?embedded=true', style: { width: '100%', height: '100%' }, frameborder: '0', marginheight: '0', marginwidth: '0' },
+											'Loading...'
 									)
 							);
 					}
@@ -70006,159 +69527,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 							return _react2.default.createElement(
 									'div',
-									{ className: 'page-wrapper get-involved-wrapper' },
+									null,
 									_react2.default.createElement(
-											'section',
-											{ className: 'header-wrapper valign-wrapper', style: styles.sectionHeader },
-											_react2.default.createElement(
-													'div',
-													{ className: 'header-text valign' },
-													_react2.default.createElement(
-															'h1',
-															null,
-															'Partner'
-													),
-													_react2.default.createElement(
-															'p',
-															null,
-															'Want to partner with SecondGen?'
-													)
-											)
-									),
-									_react2.default.createElement(
-											'div',
-											{ className: 'content-wrapper' },
-											_react2.default.createElement(
-													_Paper2.default,
-													{ zDepth: 3, id: 'form-wrapper' },
-													_react2.default.createElement(
-															'form',
-															{ onSubmit: this.handleFormSubmit.bind(this) },
-															_react2.default.createElement(
-																	'p',
-																	null,
-																	'Get started by filling out this form.'
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'first_name_input',
-																					name: 'first_name',
-																					floatingLabelText: 'First Name *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	),
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-6',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'last_name_input',
-																					name: 'last_name',
-																					floatingLabelText: 'Last Name *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'email_input',
-																					name: 'email',
-																					floatingLabelText: 'Email Address *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'company_input',
-																					name: 'company',
-																					floatingLabelText: 'Company/Organization *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'row' },
-																	_react2.default.createElement(
-																			'div',
-																			{
-																					className: 'col-xs-12 col-sm-12',
-																					style: styles.inputWrapperStyle
-																			},
-																			_react2.default.createElement(_TextField2.default, {
-																					ref: 'what_input',
-																					name: 'what',
-																					floatingLabelText: 'What are you interested in doing? *',
-																					style: styles.textFieldStyle,
-																					floatingLabelFocusStyle: styles.floatingLabelFocusStyle,
-																					underlineFocusStyle: styles.underlineFocusStyle
-																			})
-																	)
-															),
-															_react2.default.createElement(_FlatButton2.default, {
-																	type: 'submit',
-																	label: 'Submit',
-																	backgroundColor: Colors.teal500,
-																	hoverColor: Colors.teal400,
-																	disabled: this.state.buttonDisabled,
-																	labelStyle: {
-																			color: 'white'
-																	},
-																	style: {
-																			marginTop: '5vh',
-																			width: '100%',
-																			height: '6vh'
-																	},
-																	rippleColor: 'white'
-															}),
-															_react2.default.createElement(
-																	'p',
-																	{ style: {
-																					color: Colors.red500,
-																					fontSize: '1em',
-																					opacity: this.state.errorMessage ? 1 : 0,
-																					transition: 'opacity ease 0.25s'
-																			} },
-																	'Please fill out all required fields.'
-															)
-													)
-											),
-											_react2.default.createElement(_Paper2.default, { id: 'cover', zDepth: 5 })
+											'iframe',
+											{ src: 'https://docs.google.com/forms/d/e/1FAIpQLSdmjHH0oWSixcW7zJpeJdTDICXLExSxWED1nKjkRspfF-pDtg/viewform?embedded=true', style: { width: '100%', height: '100%' }, frameborder: '0', marginheight: '0', marginwidth: '0' },
+											'Loading...'
 									)
 							);
 					}
@@ -70819,7 +70192,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	        };
 	        _this.team = [{
-	            name: 'Asdf Asdf',
+	            name: 'Bobby Thakkar',
 	            title: 'Executive Director',
 	            imgSrc: 'http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg' //'/img/team/bobby_thakkar.jpg'
 	        }, {
@@ -71927,7 +71300,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 609 */
 /***/ function(module, exports) {
 
-	module.exports = "<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\">\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/img/logos/SG_square.png\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css\">\n</head>\n\n<body>\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n    <script src=\"https://code.jquery.com/jquery-3.1.0.min.js\" integrity=\"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=\" crossorigin=\"anonymous\"></script>\n    <script type=\"text/javascript\" src=\"/typed.min.js\"></script>\n    <script>\n        $(function(){\n            $(\"#splash-typed\").typed({\n                strings: [\"students.\", \"hackers.\", \"artists.\", \"designers.\", \"film makers.\"],\n                typeSpeed: 30,\n                loop: true\n            });\n        });\n    </script>\n</body>\n";
+	module.exports = "<head>\n    <title>SecondGen</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\">\n    <meta name=\"description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta name=\"author\" content=\"Avik Jain <avik@avikjain.me>\">\n    <meta property=\"og:url\" content=\"https://secondgen.org\">\n    <meta property=\"og:image\" content=\"/img/SG.png\">\n    <meta property=\"og:description\" content=\"SecondGen empowers driven students to pursue their passions through entrepreneurship.\">\n    <meta property=\"og:title\" content=\"SecondGen\">\n    <meta property=\"og:site_name\" content=\"SecondGen\">\n    <meta property=\"og:see_also\" content=\"http://incubatex.org\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css\" type=\"text/css\" >\n    <link href=\"/main.css\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqX5YOxyLk4Nzo846_3G4YtkODDVrVQzE\"></script>\n    <link rel=\"icon\" type=\"image/png\" href=\"/img/logos/SG_square.png\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css\">\n    <script src=\"//load.sumome.com/\" data-sumo-site-id=\"1ec8be7034895fa02b367ff3a3d33c825fb49564e7585474592f1bf48cf226b8\" async=\"async\"></script>\n</head>\n\n<body>\n    <div id='app-root'></div>\n    <script src=\"/bundle.js\"></script>\n    <script src=\"https://code.jquery.com/jquery-3.1.0.min.js\" integrity=\"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=\" crossorigin=\"anonymous\"></script>\n    <script type=\"text/javascript\" src=\"/typed.min.js\"></script>\n    <script>\n        $(function(){\n            $(\"#splash-typed\").typed({\n                strings: [\"students.\", \"hackers.\", \"artists.\", \"designers.\", \"film makers.\"],\n                typeSpeed: 30,\n                loop: true\n            });\n        });\n    </script>\n</body>\n";
 
 /***/ }
 /******/ ])
