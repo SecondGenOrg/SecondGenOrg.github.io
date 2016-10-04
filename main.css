@@ -450,7 +450,7 @@ section {
   z-index: 10000000000000;
   position: relative;
   width: 100vw;
-  padding-top: 3 vh;
+  padding-top: 3vh;
   color: white;
   background-color: #424242;
 }
