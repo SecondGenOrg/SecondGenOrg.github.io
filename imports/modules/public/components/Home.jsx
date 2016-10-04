@@ -133,7 +133,7 @@ export default class Home extends React.Component {
                         <div className="col-xs-12 col-sm-4">
                             <h2>Partner</h2>
                             <p>Are you a big company, investor or curious supporter? Fill out this form for any inquiries on other ways to get involved with SecondGen.</p>
-                            <Link to="/start-chapter" style={{
+                            <Link to="/partner" style={{
                                 width: '50%'
                             }}>
                                 <RaisedButton
@@ -152,7 +152,7 @@ export default class Home extends React.Component {
                         <div className="col-xs-12 col-sm-4">
                             <h2>Join Our Team</h2>
                             <p>SecondGen is always looking for amazing students to help contribute to our community from local chapter leaders to global directors. Fill out this form to get involved today!</p>
-                            <Link to="/start-chapter" style={{
+                            <Link to="/join-team" style={{
                                 width: '50%'
                             }}>
                                 <RaisedButton
