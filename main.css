@@ -11,6 +11,12 @@ html, body, .page-wrapper {
   overflow-y: auto;
   color: #505050;
 }
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
 .page-wrapper {
   pointer-events: none;
   z-index: -23;
@@ -437,6 +443,41 @@ section {
   line-height: 1.5;
   font-size: 1.2em;
   font-weight: 300;
+}
+
+/* footer */
+#footer {
+  z-index: 10000000000000;
+  position: relative;
+  width: 100vw;
+  padding-top: 3 vh;
+  color: white;
+  background-color: #424242;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+#footer h3 {
+  font-weight: 600;
+  font-size: 1.6em;
+  color: white;
+  margin-top: 2vh;
+}
+#footer p {
+  font-size: 1em;
+  font-weight: 300;
+}
+#footer .row {
+  width: 90%;
+  margin: auto;
+}
+#footer-copyright {
+  margin-top: 5vh;
+  background-color: #212121;
+  color: white;
+  padding: 2vh;
+  padding-left: 5vw;
 }
 /* Animations */
 @keyframes fadeIn {
