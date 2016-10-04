@@ -12,7 +12,7 @@ export default class Component extends React.Component {
       };
       this.team = [
       		{
-      				name: 'Asdf Asdf',
+      				name: 'Bobby Thakkar',
       				title: 'Executive Director',
       				imgSrc: 'http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg'//'/img/team/bobby_thakkar.jpg'
       		}, {

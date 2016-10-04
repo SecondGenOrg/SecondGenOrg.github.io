@@ -176,8 +176,8 @@ section {
 .section-header {
   text-align: center;
   width: 100%;
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: 900;
+  font-size: 2.8rem;
   padding-top: 5vh;
 }
 
@@ -211,7 +211,7 @@ section {
     font-weight: 300;
   }
 }
-#section-what-we-do .row {
+#section-what-we-do .row, #section-get-involved .row {
   padding: 10vh;
   padding-top: 2vh;
 }
@@ -236,6 +236,18 @@ section {
   overflow: hidden;
 }
 
+#section-get-involved .row > div {
+  padding: 4vh;
+}
+#section-get-involved .row > div h2 {
+  font-weight: 400;
+  font-size: 2em;
+}
+#section-get-involved .row > div p {
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
 #subscribe-banner {
   position: relative;
   width: 100vw;

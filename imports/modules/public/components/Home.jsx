@@ -107,6 +107,69 @@ export default class Home extends React.Component {
                         />
                     </div>
                 </div>*/}
+
+                <section id="section-get-involved" class="content-section">
+                <h1 id="get-involved-header" className="section-header">Get Involved</h1>
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-4">
+                            <h2>Start a Chapter</h2>
+                            <p>SecondGen chapters can be new clubs or can be integrated into existing clubs. If you believe we can make a difference in your community, we encourage you to start a local chapter.</p>
+                            <Link to="/start-chapter" style={{
+                                width: '50%'
+                            }}>
+                                <RaisedButton
+                                    label="Start a Chapter!"
+                                    backgroundColor={Colors.blue500}
+                                    labelStyle={{
+                                        color: 'white'
+                                    }}
+                                    style={{
+                                        display: 'block',
+                                        marginTop: '20px'
+                                    }}
+                                />
+                            </Link>
+                        </div>
+                        <div className="col-xs-12 col-sm-4">
+                            <h2>Partner</h2>
+                            <p>Are you a big company, investor or curious supporter? Fill out this form for any inquiries on other ways to get involved with SecondGen.</p>
+                            <Link to="/start-chapter" style={{
+                                width: '50%'
+                            }}>
+                                <RaisedButton
+                                    label="Contact Us!"
+                                    backgroundColor={Colors.blue500}
+                                    labelStyle={{
+                                        color: 'white'
+                                    }}
+                                    style={{
+                                        display: 'block',
+                                        marginTop: '20px'
+                                    }}
+                                />
+                            </Link>
+                        </div>
+                        <div className="col-xs-12 col-sm-4">
+                            <h2>Join Our Team</h2>
+                            <p>SecondGen is always looking for amazing students to help contribute to our community from local chapter leaders to global directors. Fill out this form to get involved today!</p>
+                            <Link to="/start-chapter" style={{
+                                width: '50%'
+                            }}>
+                                <RaisedButton
+                                    label="Join Us!"
+                                    backgroundColor={Colors.blue500}
+                                    labelStyle={{
+                                        color: 'white'
+                                    }}
+                                    style={{
+                                        display: 'block',
+                                        marginTop: '20px'
+                                    }}
+                                />
+                            </Link>
+                        </div>
+                    </div>
+                </section>
                 <section id="section-partners" className="content-section">
                     <h1 id="partners-header" className="section-header">Partners</h1>
                     <div className="row">
