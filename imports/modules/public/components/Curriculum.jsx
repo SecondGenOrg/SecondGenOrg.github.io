@@ -10,24 +10,14 @@ export default class Curriculum extends React.Component {
               background: Colors.pink500
           }
       };
-      const errorMessage = false;
-      const buttonDisabled = false;
-      this.state = { styles, errorMessage, buttonDisabled };
+      this.state = { styles };
 		}
     render() {
     		const { styles } = this.state;
         return (
             <div className="page-wrapper curriculum-wrapper">
-           		  <div style={{ height: '5vh' }} />
-                <section className="header-wrapper valign-wrapper" style={ styles.sectionHeader }> 
-                    <div className="header-text valign">
-                        <h1>Curriculum</h1> 
-                        <p>More information coming soon.</p>
-                    </div>
-                </section>
-                <div className="content-wrapper">
-                    <Paper id="cover" zDepth={5}/>
-                </div>
+                <iframe id="gitbook-frame" src="https://secondgen.gitbooks.io/secondgen-curriculum/content/" seamless="seamless" style={{border: 0,marginTop: '8vh',height: '100%', width: '100%'}} />
+                
             </div>
         );
     }
