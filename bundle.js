@@ -30861,7 +30861,7 @@ return /******/ (function(modules) { // webpackBootstrap
 							_react2.default.createElement(
 								'p',
 								null,
-								'SecondGen is a non-profit organization which promotes entrepreneurship among students.'
+								'SecondGen is a student-run organization which promotes youth entrepreneurship.'
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
