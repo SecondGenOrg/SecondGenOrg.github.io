@@ -12,7 +12,7 @@ class Footer extends React.Component {
 				<div className="row">
 					<div className="col-xs-12 col-sm-6">
 						<h3>SecondGen</h3>
-						<p>SecondGen is a non-profit organization which promotes entrepreneurship among students.</p>
+						<p>SecondGen is a student-run organization which promotes youth entrepreneurship.</p>
 						<Link to="/about-us" style={{
                 width: '50%'
             }}>
