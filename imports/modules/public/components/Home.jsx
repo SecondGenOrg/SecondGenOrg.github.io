@@ -188,7 +188,7 @@ export default class Home extends React.Component {
                         <div className="col-md-3 col-xs-12 img-wrapper valign-wrapper">
                             <img 
                                 className="valign" 
-                                src="img/logos/partners/makeschool.png"
+                                src="img/logos/partners/drpepper.jpg"
                             />
                         </div>
                         <div className="col-md-3 col-xs-12 img-wrapper valign-wrapper">
