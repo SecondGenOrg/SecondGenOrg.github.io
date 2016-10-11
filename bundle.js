@@ -57483,7 +57483,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            { className: 'col-md-3 col-xs-12 img-wrapper valign-wrapper' },
 	                            _react2.default.createElement('img', {
 	                                className: 'valign',
-	                                src: 'img/logos/partners/makeschool.png'
+	                                src: 'img/logos/partners/drpepper.jpg'
 	                            })
 	                        ),
 	                        _react2.default.createElement(
