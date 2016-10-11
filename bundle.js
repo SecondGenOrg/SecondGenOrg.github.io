@@ -70091,7 +70091,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'page-wrapper contests-wrapper' },
+	                { className: 'page-wrapper', id: 'contests-wrapper' },
 	                _react2.default.createElement('div', { style: { height: '5vh' } }),
 	                _react2.default.createElement(
 	                    'section',
@@ -70107,13 +70107,37 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Coming Summer 2017.'
+	                            'Coming Soon.'
 	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'content-wrapper' },
+	                    _react2.default.createElement(
+	                        _Paper2.default,
+	                        { zDepth: 3, style: { padding: '5vh', width: window.innerWidth > 600 ? '75%' : '85%', margin: 'auto' } },
+	                        _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'Overview'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'The SecondGen Competition is a premiere showcasing of the talents, skills, and projects of students from across the nation. This competition recognizes and rewards passion and achievements in fields ranging from mobile development to traditional art.  There will be two rounds of the competition: local and national. The local competitions will be held in over 8 cities. Members and non members in the area are eligible to compete at these local competitions.  The top local winners from each category are eligible to compete for national awards at the national level under the same guidelines and expectations. '
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Each competition event is geared towards the main fields that SecondGen members are involved in. They include business, photography, mobile development, hardware, film, digital art, traditional art, and startups. These events are guided by specific guidelines and informational sheets that can be found below. Each event has its own unique form of competing.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'The competitive events are divided into individual, team, and chapter categories. Individual and team events focus on more on developed projects and learned skills. Chapter events on the other hand award SecondGen chapter that have contributed to one or more of these fields for community benefit.'
+	                        )
+	                    ),
 	                    _react2.default.createElement(_Paper2.default, { id: 'cover', zDepth: 5 })
 	                )
 	            );
