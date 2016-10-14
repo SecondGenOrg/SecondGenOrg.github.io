@@ -70103,8 +70103,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }, {
 	      name: 'Digital Art'
 	    }, {
-	      name: 'Traditional Art'
-	    }, {
 	      name: 'Startup'
 	    }, {
 	      name: 'Club Event'
@@ -70166,7 +70164,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'The SecondGen Competition is a premiere showcasing of the talents, skills, and projects of students from across the nation. This competition recognizes and rewards passion and achievements in fields ranging from mobile development to traditional art.  There will be two rounds of the competition: local and national. The local competitions will be held in over 8 cities. Members and non members in the area are eligible to compete at these local competitions.  The top local winners from each category are eligible to compete for national awards at the national level under the same guidelines and expectations. '
+	              'The SecondGen Competition is a premiere showcasing of the talents, skills, and projects of students from across the nation. This competition recognizes and rewards passion and achievements in fields ranging from mobile development to filmmaking.  There will be two rounds of the competition: local and national. The local competitions will be held in over 8 cities. Members and non members in the area are eligible to compete at these local competitions.  The top local winners from each category are eligible to compete for national awards at the national level under the same guidelines and expectations. '
 	            ),
 	            _react2.default.createElement(
 	              'p',
