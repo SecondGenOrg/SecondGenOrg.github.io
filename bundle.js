@@ -29970,10 +29970,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        }, */{
 	                            text: 'Curriculum',
 	                            href: '/curriculum'
-	                        }, {
-	                            text: 'Student Pack',
-	                            href: '/student-pack'
-	                        }]
+	                        } /*, {
+	                          	text: 'Student Pack',
+	                          	href: '/student-pack'
+	                          }*/
+	                        ]
 	                    }, {
 	                        title: 'Get Involved',
 	                        color: Colors.teal900,
