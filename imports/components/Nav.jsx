@@ -55,10 +55,10 @@ export default class Nav extends React.Component {
                         				}, */{
                         						text: 'Curriculum',
                         						href: '/curriculum'
-                        				}, {
+                        				}/*, {
                         						text: 'Student Pack',
                         						href: '/student-pack'
-                        				}
+                        				}*/
                         		]
                         }, {
                             title: 'Get Involved',
