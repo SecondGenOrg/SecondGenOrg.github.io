@@ -46,13 +46,13 @@ export default class Nav extends React.Component {
                             title: 'Resources', 
                         		color: Colors.pink800,
                         		items: [
-                        				{
+                        				/*{
                         						text: 'Mentors',
                         						href: '/mentors'
                         				}, {
                         						text: 'Videos',
                         						href: '/videos'
-                        				}, {
+                        				}, */{
                         						text: 'Curriculum',
                         						href: '/curriculum'
                         				}, {
