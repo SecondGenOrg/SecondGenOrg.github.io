@@ -62446,6 +62446,15 @@ return /******/ (function(modules) { // webpackBootstrap
 				]
 			},
 			{
+				"name": "IgniteDFW",
+				"date": "January 24, 2017",
+				"imgSrc": "/img/events/ignitedfw.png",
+				"tags": [
+					"Tech",
+					"Hackathon"
+				]
+			},
+			{
 				"name": "Suburbia Film Festival",
 				"date": "January 2017",
 				"imgSrc": "/img/events/suburbiafilm.png",
@@ -62456,12 +62465,36 @@ return /******/ (function(modules) { // webpackBootstrap
 				]
 			},
 			{
+				"name": "TEDxMontaVista",
+				"date": "February 11, 2017",
+				"imgSrc": "/img/events/ted.png",
+				"tags": [
+					"General"
+				]
+			},
+			{
+				"name": "DandyHacks",
+				"date": "February 17, 2017",
+				"imgSrc": "/img/events/dandyhacks.png",
+				"tags": [
+					"Tech"
+				]
+			},
+			{
 				"name": "Tech Women's Conference",
 				"date": "February 2017",
 				"imgSrc": "/img/events/womenstech.png",
 				"tags": [
 					"Entrepreneurship",
 					"Tech"
+				]
+			},
+			{
+				"name": "SXSW",
+				"date": "March 9-19, 2017",
+				"imgSrc": "/img/events/sxsw.png",
+				"tags": [
+					"General"
 				]
 			},
 			{
@@ -62481,6 +62514,23 @@ return /******/ (function(modules) { // webpackBootstrap
 				"tags": [
 					"Tech",
 					"Hackathon"
+				]
+			},
+			{
+				"name": "HackDFW",
+				"date": "Spring 2017",
+				"imgSrc": "/img/events/hackdfw.png",
+				"tags": [
+					"Tech",
+					"Hackathon"
+				]
+			},
+			{
+				"name": "TEDxSMU Kids",
+				"date": "November 4, 2017",
+				"imgSrc": "/img/events/ted.png",
+				"tags": [
+					"General"
 				]
 			}
 		],
@@ -62580,6 +62630,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Card = __webpack_require__(479);
 
+	var _reactRouter = __webpack_require__(176);
+
 	var _FlatButton = __webpack_require__(474);
 
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
@@ -62608,46 +62660,46 @@ return /******/ (function(modules) { // webpackBootstrap
 	    _createClass(Chapters, [{
 	        key: 'render',
 	        value: function render() {
-	            var chaptersCards = _chaptersData2.default.map(function (chapter) {
-	                return _react2.default.createElement(
-	                    'div',
-	                    { className: 'col-lg-3 col-md-4 col-sm-4 col-xs-6 chapter-card-wrapper', key: chapter.key },
-	                    _react2.default.createElement(
-	                        _Card.Card,
-	                        { zDepth: 3 },
-	                        _react2.default.createElement(_Card.CardTitle, {
-	                            title: chapter.key,
-	                            subtitle: chapter.regional ? "Regional Chapter" : chapter.city,
-	                            titleStyle: {
-	                                fontSize: '3vh',
-	                                lineHeight: 1.1
-	                            },
-	                            style: {
-	                                paddingBottom: 0
-	                            }
-	                        }),
-	                        _react2.default.createElement(
-	                            _Card.CardActions,
-	                            {
-	                                style: {
+	            /*var chaptersCards = chaptersData.map(function(chapter) {
+	                return (
+	                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-6 chapter-card-wrapper" key={chapter.key}>
+	                        <Card zDepth={3}>
+	                            <CardTitle 
+	                                title={chapter.key} 
+	                                subtitle={chapter.regional ? "Regional Chapter" : chapter.city} 
+	                                titleStyle={{
+	                                    fontSize: '3vh',
+	                                    lineHeight: 1.1
+	                                }}
+	                                style={{
+	                                    paddingBottom: 0
+	                                }}
+	                            />
+	                            <CardActions
+	                                style={{
 	                                    position: 'absolute',
 	                                    bottom: 0
-	                                } },
-	                            chapter.url ? _react2.default.createElement(
-	                                'a',
-	                                {
-	                                    href: chapter.url,
-	                                    target: '_blank'
-	                                },
-	                                _react2.default.createElement(_FlatButton2.default, {
-	                                    primary: true,
-	                                    label: 'Learn More'
-	                                })
-	                            ) : null
-	                        )
-	                    )
-	                );
-	            });
+	                                }}>
+	                                { 
+	                                    chapter.url
+	                                    ? 
+	                                    <a 
+	                                        href={chapter.url}
+	                                        target="_blank"
+	                                    >
+	                                        <FlatButton
+	                                            primary={true}
+	                                            label="Learn More" 
+	                                        />
+	                                    </a>
+	                                    : 
+	                                    null
+	                                }   
+	                            </CardActions>
+	                        </Card>
+	                    </div>
+	                )
+	            })*/
 	            return _react2.default.createElement(
 	                'div',
 	                { id: 'chapters-wrapper', className: 'page-wrapper' },
@@ -62665,7 +62717,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Find a SecondGen chapter near you.'
+	                            'SecondGen in your community.'
 	                        )
 	                    ),
 	                    _react2.default.createElement(_ChaptersMap2.default, {
@@ -62676,9 +62728,77 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    'div',
 	                    { className: 'content-wrapper' },
 	                    _react2.default.createElement(
+	                        _Paper2.default,
+	                        { zDepth: 3, style: { padding: '5vh', width: window.innerWidth > 600 ? '75%' : '85%', margin: 'auto' } },
+	                        _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'Overview'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Simply put, a chapter consists of a group of driven and passionate students ready to develop their idea into a startup with the support of SecondGen. As a chapter, you receive Secondgen resources such as our curriculum, special access to events hosted by SecondGen, mentorship, access to a worldwide network of like-minded individuals, and notifications of vertical specific opportunities in your area. '
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Chapters can take the form of clubs at schools or extend into community meetup groups that get together biweekly. Our chapters are built to bring and promote entrepreneurship into your local youth community.'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'row' },
-	                        chaptersCards
+	                        { className: 'row', style: { width: window.innerWidth > 600 ? '78%' : '88%', margin: 'auto' } },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-xs-12 col-sm-6', style: { paddingTop: '3vh' } },
+	                            _react2.default.createElement(
+	                                _Card.Card,
+	                                { zDepth: 3 },
+	                                _react2.default.createElement(_Card.CardTitle, {
+	                                    title: 'Start a SecondGen Chapter',
+	                                    titleStyle: { width: '100%' } }),
+	                                _react2.default.createElement(
+	                                    _Card.CardActions,
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        'a',
+	                                        { target: '_blank', href: 'https://secondgen.gitbooks.io/secondgen-chapter-guide/content/chapter1.html' },
+	                                        _react2.default.createElement(_FlatButton2.default, { label: 'Chapter Guide', primary: true })
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/start-chapter' },
+	                                        _react2.default.createElement(_FlatButton2.default, { label: 'Application', primary: true })
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-xs-12 col-sm-6', style: { paddingTop: '3vh' } },
+	                            _react2.default.createElement(
+	                                _Card.Card,
+	                                { zDepth: 3 },
+	                                _react2.default.createElement(_Card.CardTitle, {
+	                                    title: 'Partner an Existing Club',
+	                                    titleStyle: { width: '100%' } }),
+	                                _react2.default.createElement(
+	                                    _Card.CardActions,
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        'a',
+	                                        { target: '_blank', href: 'https://secondgen.gitbooks.io/secondgen-chapter-guide/content/chapter1.html' },
+	                                        _react2.default.createElement(_FlatButton2.default, { label: 'Chapter Guide', primary: true })
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/start-chapter' },
+	                                        _react2.default.createElement(_FlatButton2.default, { label: 'Application', primary: true })
+	                                    )
+	                                )
+	                            )
+	                        )
 	                    ),
 	                    _react2.default.createElement(_Paper2.default, { id: 'cover' })
 	                )
