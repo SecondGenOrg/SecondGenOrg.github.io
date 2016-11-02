@@ -59494,7 +59494,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        { href: this.props.url, target: '_blank' },
 	                        _react2.default.createElement(_FlatButton2.default, {
 	                            primary: true,
-	                            label: 'Learn More'
+	                            label: 'Learn More',
+	                            disabled: !this.props.url
 	                        })
 	                    )
 	                )
