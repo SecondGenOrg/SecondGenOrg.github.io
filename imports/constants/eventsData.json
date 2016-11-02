@@ -58,9 +58,10 @@
       ]
     },
     {
-      "name": "Tech Women's Conference",
+      "name": "Ladies in Tech Conference",
       "date": "February 2017",
       "imgSrc": "/img/events/womenstech.png",
+      "url": "http://litconference.com/",
       "tags": [
         "Entrepreneurship",
         "Tech"
