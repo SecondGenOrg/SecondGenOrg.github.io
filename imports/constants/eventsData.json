@@ -11,6 +11,15 @@
       ]
     },
     {
+      "name": "IgniteDFW",
+      "date": "January 24, 2017",
+      "imgSrc": "/img/events/ignitedfw.png",
+      "tags": [
+        "Tech",
+        "Hackathon"
+      ]
+    },
+    {
       "name": "Suburbia Film Festival",
       "date": "January 2017",
       "imgSrc": "/img/events/suburbiafilm.png",
@@ -21,12 +30,36 @@
       ]
     },
     {
+      "name": "TEDxMontaVista",
+      "date": "February 11, 2017",
+      "imgSrc": "/img/events/ted.png",
+      "tags": [
+        "General"
+      ]
+    },
+    {
+      "name": "DandyHacks",
+      "date": "February 17, 2017",
+      "imgSrc": "/img/events/dandyhacks.png",
+      "tags": [
+        "Tech"
+      ]
+    },
+    {
       "name": "Tech Women's Conference",
       "date": "February 2017",
       "imgSrc": "/img/events/womenstech.png",
       "tags": [
         "Entrepreneurship",
         "Tech"
+      ]
+    },
+    {
+      "name": "SXSW",
+      "date": "March 9-19, 2017",
+      "imgSrc": "/img/events/sxsw.png",
+      "tags": [
+        "General"
       ]
     },
     {
@@ -46,6 +79,23 @@
       "tags": [
         "Tech",
         "Hackathon"
+      ]
+    },
+    {
+      "name": "HackDFW",
+      "date": "Spring 2017",
+      "imgSrc": "/img/events/hackdfw.png",
+      "tags": [
+        "Tech",
+        "Hackathon"
+      ]
+    },
+    {
+      "name": "TEDxSMU Kids",
+      "date": "November 4, 2017",
+      "imgSrc": "/img/events/ted.png",
+      "tags": [
+        "General"
       ]
     }
   ],

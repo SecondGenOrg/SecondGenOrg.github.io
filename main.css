@@ -313,10 +313,15 @@ section {
   margin-top: 50vh;
   min-height: 50vh;
 }
+#chapters-wrapper .content-wrapper p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
 #chapters-wrapper #cover {
   top: 10vh;
 }
-#chapters-wrapper .chapter-card-wrapper {
+
+/*#chapters-wrapper .chapter-card-wrapper {
   padding: 1.5vh;
   z-index: 201;
 }
@@ -333,7 +338,7 @@ section {
   height: 20vh;
   width: 100%;
   background-size: cover;
-}
+}*/
 /* Get Involved pages styles */
 .get-involved-wrapper .content-wrapper {
 	margin-top: 45vh;
