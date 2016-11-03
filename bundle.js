@@ -62437,6 +62437,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = {
 		"events": [
 			{
+				"name": "TEDxSMU Kids",
+				"date": "November 4, 2016",
+				"imgSrc": "/img/events/ted.png",
+				"tags": [
+					"General"
+				]
+			},
+			{
 				"name": "Local Hack Day",
 				"date": "December 3, 2016",
 				"imgSrc": "/img/events/localhackday.png",
@@ -62450,6 +62458,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				"name": "IgniteDFW",
 				"date": "January 24, 2017",
 				"imgSrc": "/img/events/ignitedfw.png",
+				"url": "http://www.ignitedfw.org",
 				"tags": [
 					"Tech",
 					"Hackathon"
@@ -62469,6 +62478,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				"name": "TEDxMontaVista",
 				"date": "February 11, 2017",
 				"imgSrc": "/img/events/ted.png",
+				"url": "https://www.ted.com/about/programs-initiatives/tedx-program",
 				"tags": [
 					"General"
 				]
@@ -62477,14 +62487,17 @@ return /******/ (function(modules) { // webpackBootstrap
 				"name": "DandyHacks",
 				"date": "February 17, 2017",
 				"imgSrc": "/img/events/dandyhacks.png",
+				"url": "http://dandyhacks.org",
 				"tags": [
-					"Tech"
+					"Tech",
+					"Hackathon"
 				]
 			},
 			{
-				"name": "Tech Women's Conference",
+				"name": "Ladies in Tech Conference",
 				"date": "February 2017",
 				"imgSrc": "/img/events/womenstech.png",
+				"url": "http://litconference.com/",
 				"tags": [
 					"Entrepreneurship",
 					"Tech"
@@ -62494,12 +62507,13 @@ return /******/ (function(modules) { // webpackBootstrap
 				"name": "SXSW",
 				"date": "March 9-19, 2017",
 				"imgSrc": "/img/events/sxsw.png",
+				"url": "https://www.sxsw.com",
 				"tags": [
 					"General"
 				]
 			},
 			{
-				"name": "TEDx",
+				"name": "TEDxAllen",
 				"date": "March 2017",
 				"imgSrc": "/img/events/ted.png",
 				"url": "www.tedxallen.com",
@@ -62521,17 +62535,10 @@ return /******/ (function(modules) { // webpackBootstrap
 				"name": "HackDFW",
 				"date": "Spring 2017",
 				"imgSrc": "/img/events/hackdfw.png",
+				"url": "http://hackdfw.com",
 				"tags": [
 					"Tech",
 					"Hackathon"
-				]
-			},
-			{
-				"name": "TEDxSMU Kids",
-				"date": "November 4, 2017",
-				"imgSrc": "/img/events/ted.png",
-				"tags": [
-					"General"
 				]
 			}
 		],
@@ -62789,8 +62796,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                    null,
 	                                    _react2.default.createElement(
 	                                        'a',
-	                                        { target: '_blank', href: 'https://secondgen.gitbooks.io/secondgen-chapter-guide/content/chapter1.html' },
-	                                        _react2.default.createElement(_FlatButton2.default, { label: 'Chapter Guide', primary: true })
+	                                        { target: '_blank', href: 'https://www.gitbook.com/book/secondgen/secondgen-partner-clubs/details' },
+	                                        _react2.default.createElement(_FlatButton2.default, { label: 'Partner Club Guide', primary: true })
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        _reactRouter.Link,
