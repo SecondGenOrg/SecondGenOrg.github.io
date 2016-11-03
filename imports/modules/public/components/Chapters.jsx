@@ -90,7 +90,7 @@ export default class Chapters extends React.Component {
                                   titleStyle={{width: '100%'}}/>
                                 <CardActions>
                                     <a target="_blank" href="https://www.gitbook.com/book/secondgen/secondgen-partner-clubs/details">
-                                        <FlatButton label="Chapter Guide" primary={true}/>
+                                        <FlatButton label="Partner Club Guide" primary={true}/>
                                     </a>
                                     <Link to="/start-chapter">
                                       <FlatButton label="Application" primary={true}/>
