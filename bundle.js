@@ -70345,7 +70345,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            open: this.state.open,
 	            onRequestClose: this.handleClose.bind(this)
 	          },
-	          'More information coming November 1st.'
+	          'More information coming soon.'
 	        )
 	      );
 	    }
