@@ -102,7 +102,7 @@ export default class Contests extends React.Component {
                   open={this.state.open}
                   onRequestClose={this.handleClose.bind(this)}
                 >
-                  More information coming November 1st.
+                  More information coming soon.
                 </Dialog>
             </div>
         );
